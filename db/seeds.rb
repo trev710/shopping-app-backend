@@ -5,3 +5,8 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+
+bobby = Customer.create(username: password:)
+
+
+penguin1 = Penguin.create(name: origin: price: category: bio: image_url:)
