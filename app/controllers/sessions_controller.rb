@@ -1,10 +1,10 @@
 class SessionsController < ApplicationController
   # post '/login'
   def create
-    user = User.find_by_username(params[:username])
-    if user&.authenticate(params[:password])
-      session[:user_id] = user.id
-      render json: user, status: :ok
+    customer = Customer.find_by_username(params[:username])
+    if customer&.authenticate(params[:password])
+      session[:customer_id] = customer.id
+      render json: customer, status: :ok
     else
       render json: { error: "Invalid username or password" }, status: :unauthorized
     end
@@ -12,7 +12,7 @@ class SessionsController < ApplicationController
 
   # delete '/logout'
   def destroy
-    session.delete :user_id
+    session.delete :customer_id
     head :no_content
   end
 end
