@@ -6,6 +6,11 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 
+puts "Deleting data..."
+Customer.destroy_all
+Penguin.destroy_all
+Shelter.destroy_all
+
 bobby = Customer.create(username: "bobbyboy", password: "safepassword")
 josie = Customer.create(username: "josiequeen", password: "safestpassword")
 
