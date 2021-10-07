@@ -2,9 +2,8 @@ class SessionsController < ApplicationController
   # post '/login'
   def create
     customer = Customer.find_by(params[:username])
-    if customer&.authenticate(params[:password])
-      session[:customer_id] = customer.id
-      render json: customer, status: :created
+    session[:customer_id] = customer.id
+    render json: customer, status: :created
     else
       render json: { error: "Invalid username or password" }, status: :unauthorized
     end
@@ -20,7 +19,13 @@ end
   #simpler version perhaps, no auth
 
   # def create
-  #       user = User.find_by(username: params[:username])
-  #       session[:user_id] = user.id
-  #       render json: user, status: :created
+  #     # customer = User.find_by(username: params[:username])
+  #     customer = Customer.create!(customer_params)
+  #     # session[:customer_id] = customer.id
+  #     render json: customer, status: :created
   # end
+  # private
+
+  #   def customer_params
+  #       params.permit(:username, :password)
+  #   end

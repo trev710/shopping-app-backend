@@ -33,3 +33,1377 @@ FOREIGN KEY ("shelter_id")
   [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mCOMMIT[0m
   [1m[35m (0.6ms)[0m  [1m[34mSELECT pg_advisory_unlock(1087325618115650655)[0m
   [1m[35m (1.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_try_advisory_lock(1087325618115650655)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreatePenguins (20211004212846)
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (7.8ms)[0m  [1m[35mDROP TABLE "penguins"[0m
+  [1m[36mActiveRecord::SchemaMigration Destroy (0.6ms)[0m  [1m[31mDELETE FROM "schema_migrations" WHERE "schema_migrations"."version" = $1[0m  [["version", "20211004212846"]]
+  [1m[36mTRANSACTION (6.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_advisory_unlock(1087325618115650655)[0m
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT pg_try_advisory_lock(1087325618115650655)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateShelters (20211004191329)
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (1.2ms)[0m  [1m[35mDROP TABLE "shelters"[0m
+  [1m[36mActiveRecord::SchemaMigration Destroy (0.5ms)[0m  [1m[31mDELETE FROM "schema_migrations" WHERE "schema_migrations"."version" = $1[0m  [["version", "20211004191329"]]
+  [1m[36mTRANSACTION (1.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_advisory_unlock(1087325618115650655)[0m
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT pg_try_advisory_lock(1087325618115650655)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateCustomers (20211004191158)
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (1.3ms)[0m  [1m[35mDROP TABLE "customers"[0m
+  [1m[36mActiveRecord::SchemaMigration Destroy (0.4ms)[0m  [1m[31mDELETE FROM "schema_migrations" WHERE "schema_migrations"."version" = $1[0m  [["version", "20211004191158"]]
+  [1m[36mTRANSACTION (1.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_advisory_unlock(1087325618115650655)[0m
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT pg_try_advisory_lock(1087325618115650655)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT pg_advisory_unlock(1087325618115650655)[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_try_advisory_lock(1087325618115650655)[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateCustomers (20211004191158)
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (5.1ms)[0m  [1m[35mCREATE TABLE "customers" ("id" bigserial primary key, "username" character varying, "password" character varying, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20211004191158"]]
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[35mCOMMIT[0m
+Migrating to CreatePenguins (20211004212846)
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (4.4ms)[0m  [1m[35mCREATE TABLE "penguins" ("id" bigserial primary key, "name" character varying, "origin" character varying, "price" integer, "cateogry" character varying, "bio" character varying, "image_url" character varying, "shelter" character varying, "customer_id" bigint NOT NULL, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL, CONSTRAINT "fk_rails_9e8a3eb42e"
+FOREIGN KEY ("customer_id")
+  REFERENCES "customers" ("id")
+)[0m
+  [1m[35m (0.8ms)[0m  [1m[35mCREATE INDEX "index_penguins_on_customer_id" ON "penguins" ("customer_id")[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20211004212846"]]
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.6ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT pg_advisory_unlock(1087325618115650655)[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_try_advisory_lock(1087325618115650655)[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.3ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_advisory_unlock(1087325618115650655)[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT pg_try_advisory_lock(1087325618115650655)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreatePenguins (20211004212846)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (2.9ms)[0m  [1m[35mDROP TABLE "penguins"[0m
+  [1m[36mActiveRecord::SchemaMigration Destroy (0.3ms)[0m  [1m[31mDELETE FROM "schema_migrations" WHERE "schema_migrations"."version" = $1[0m  [["version", "20211004212846"]]
+  [1m[36mTRANSACTION (1.8ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_advisory_unlock(1087325618115650655)[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT pg_try_advisory_lock(1087325618115650655)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateCustomers (20211004191158)
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (1.2ms)[0m  [1m[35mDROP TABLE "customers"[0m
+  [1m[36mActiveRecord::SchemaMigration Destroy (0.4ms)[0m  [1m[31mDELETE FROM "schema_migrations" WHERE "schema_migrations"."version" = $1[0m  [["version", "20211004191158"]]
+  [1m[36mTRANSACTION (1.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_advisory_unlock(1087325618115650655)[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT pg_try_advisory_lock(1087325618115650655)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT pg_advisory_unlock(1087325618115650655)[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT pg_try_advisory_lock(1087325618115650655)[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateCustomers (20211004191158)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (3.4ms)[0m  [1m[35mCREATE TABLE "customers" ("id" bigserial primary key, "username" character varying, "password" character varying, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20211004191158"]]
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[35mCOMMIT[0m
+Migrating to CreatePenguins (20211004212846)
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (3.4ms)[0m  [1m[35mCREATE TABLE "penguins" ("id" bigserial primary key, "name" character varying, "origin" character varying, "price" integer, "bio" character varying, "image_url" character varying, "shelter" character varying, "customer_id" bigint NOT NULL, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL, CONSTRAINT "fk_rails_9e8a3eb42e"
+FOREIGN KEY ("customer_id")
+  REFERENCES "customers" ("id")
+)[0m
+  [1m[35m (0.8ms)[0m  [1m[35mCREATE INDEX "index_penguins_on_customer_id" ON "penguins" ("customer_id")[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20211004212846"]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.8ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT pg_advisory_unlock(1087325618115650655)[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mCustomer Load (0.6ms)[0m  [1m[34mSELECT "customers".* FROM "customers"[0m
+  [1m[36mPenguin Load (1.1ms)[0m  [1m[34mSELECT "penguins".* FROM "penguins"[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCustomer Exists? (0.5ms)[0m  [1m[34mSELECT 1 AS one FROM "customers" WHERE "customers"."username" = $1 LIMIT $2[0m  [["username", "bobbyboy"], ["LIMIT", 1]]
+  [1m[36mCustomer Create (0.6ms)[0m  [1m[32mINSERT INTO "customers" ("username", "password", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["username", "bobbyboy"], ["password", "safepassword"], ["created_at", "2021-10-07 18:55:14.214012"], ["updated_at", "2021-10-07 18:55:14.214012"]]
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCustomer Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "customers" WHERE "customers"."username" = $1 LIMIT $2[0m  [["username", "josiequeen"], ["LIMIT", 1]]
+  [1m[36mCustomer Create (0.2ms)[0m  [1m[32mINSERT INTO "customers" ("username", "password", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["username", "josiequeen"], ["password", "safestpassword"], ["created_at", "2021-10-07 18:55:14.219134"], ["updated_at", "2021-10-07 18:55:14.219134"]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mCustomer Load (0.4ms)[0m  [1m[34mSELECT "customers".* FROM "customers"[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCustomer Destroy (3.8ms)[0m  [1m[31mDELETE FROM "customers" WHERE "customers"."id" = $1[0m  [["id", 1]]
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCustomer Destroy (0.4ms)[0m  [1m[31mDELETE FROM "customers" WHERE "customers"."id" = $1[0m  [["id", 2]]
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mPenguin Load (0.3ms)[0m  [1m[34mSELECT "penguins".* FROM "penguins"[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCustomer Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM "customers" WHERE "customers"."username" = $1 LIMIT $2[0m  [["username", "bobbyboy"], ["LIMIT", 1]]
+  [1m[36mCustomer Create (0.3ms)[0m  [1m[32mINSERT INTO "customers" ("username", "password", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["username", "bobbyboy"], ["password", "safepassword"], ["created_at", "2021-10-07 18:59:20.714478"], ["updated_at", "2021-10-07 18:59:20.714478"]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCustomer Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "customers" WHERE "customers"."username" = $1 LIMIT $2[0m  [["username", "josiequeen"], ["LIMIT", 1]]
+  [1m[36mCustomer Create (0.2ms)[0m  [1m[32mINSERT INTO "customers" ("username", "password", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["username", "josiequeen"], ["password", "safestpassword"], ["created_at", "2021-10-07 18:59:20.719550"], ["updated_at", "2021-10-07 18:59:20.719550"]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mCustomer Load (0.6ms)[0m  [1m[34mSELECT "customers".* FROM "customers"[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCustomer Destroy (0.7ms)[0m  [1m[31mDELETE FROM "customers" WHERE "customers"."id" = $1[0m  [["id", 3]]
+  [1m[36mTRANSACTION (0.9ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCustomer Destroy (0.3ms)[0m  [1m[31mDELETE FROM "customers" WHERE "customers"."id" = $1[0m  [["id", 4]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mPenguin Load (0.3ms)[0m  [1m[34mSELECT "penguins".* FROM "penguins"[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCustomer Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM "customers" WHERE "customers"."username" = $1 LIMIT $2[0m  [["username", "bobbyboy"], ["LIMIT", 1]]
+  [1m[36mCustomer Create (0.3ms)[0m  [1m[32mINSERT INTO "customers" ("username", "password", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["username", "bobbyboy"], ["password", "safepassword"], ["created_at", "2021-10-07 18:59:54.452728"], ["updated_at", "2021-10-07 18:59:54.452728"]]
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCustomer Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "customers" WHERE "customers"."username" = $1 LIMIT $2[0m  [["username", "josiequeen"], ["LIMIT", 1]]
+  [1m[36mCustomer Create (0.2ms)[0m  [1m[32mINSERT INTO "customers" ("username", "password", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["username", "josiequeen"], ["password", "safestpassword"], ["created_at", "2021-10-07 18:59:54.457568"], ["updated_at", "2021-10-07 18:59:54.457568"]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mCustomer Load (0.5ms)[0m  [1m[34mSELECT "customers".* FROM "customers"[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCustomer Destroy (0.7ms)[0m  [1m[31mDELETE FROM "customers" WHERE "customers"."id" = $1[0m  [["id", 5]]
+  [1m[36mTRANSACTION (0.8ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCustomer Destroy (0.4ms)[0m  [1m[31mDELETE FROM "customers" WHERE "customers"."id" = $1[0m  [["id", 6]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mPenguin Load (0.2ms)[0m  [1m[34mSELECT "penguins".* FROM "penguins"[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCustomer Exists? (0.9ms)[0m  [1m[34mSELECT 1 AS one FROM "customers" WHERE "customers"."username" = $1 LIMIT $2[0m  [["username", "bobbyboy"], ["LIMIT", 1]]
+  [1m[36mCustomer Create (0.4ms)[0m  [1m[32mINSERT INTO "customers" ("username", "password", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["username", "bobbyboy"], ["password", "safepassword"], ["created_at", "2021-10-07 19:01:53.439327"], ["updated_at", "2021-10-07 19:01:53.439327"]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCustomer Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "customers" WHERE "customers"."username" = $1 LIMIT $2[0m  [["username", "josiequeen"], ["LIMIT", 1]]
+  [1m[36mCustomer Create (0.5ms)[0m  [1m[32mINSERT INTO "customers" ("username", "password", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["username", "josiequeen"], ["password", "safestpassword"], ["created_at", "2021-10-07 19:01:53.444379"], ["updated_at", "2021-10-07 19:01:53.444379"]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mCOMMIT[0m
+Started GET "/" for 127.0.0.1 at 2021-10-07 12:02:14 -0700
+  [1m[35m (1.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/connorcowan/.rvm/gems/ruby-2.7.4/gems/railties-6.1.3.2/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/connorcowan/.rvm/gems/ruby-2.7.4/gems/railties-6.1.3.2/lib/rails/templates/rails/welcome/index.html.erb (Duration: 7.5ms | Allocations: 402)
+Completed 200 OK in 24ms (Views: 14.7ms | ActiveRecord: 0.0ms | Allocations: 3431)
+
+
+Started GET "/favicon.ico" for 127.0.0.1 at 2021-10-07 12:02:14 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+Started GET "/" for ::1 at 2021-10-07 12:02:17 -0700
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/connorcowan/.rvm/gems/ruby-2.7.4/gems/railties-6.1.3.2/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/connorcowan/.rvm/gems/ruby-2.7.4/gems/railties-6.1.3.2/lib/rails/templates/rails/welcome/index.html.erb (Duration: 5.5ms | Allocations: 178)
+Completed 200 OK in 8ms (Views: 6.9ms | ActiveRecord: 0.0ms | Allocations: 808)
+
+
+Started GET "/favicon.ico" for ::1 at 2021-10-07 12:02:17 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+Started GET "/penguins" for 127.0.0.1 at 2021-10-07 12:02:34 -0700
+Processing by PenguinsController#index as */*
+  [1m[36mPenguin Load (1.5ms)[0m  [1m[34mSELECT "penguins".* FROM "penguins"[0m
+  ↳ app/controllers/penguins_controller.rb:6:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (0.2ms)
+Completed 200 OK in 27ms (Views: 18.6ms | ActiveRecord: 1.5ms | Allocations: 4219)
+
+
+Started GET "/penguins" for 127.0.0.1 at 2021-10-07 12:02:40 -0700
+Processing by PenguinsController#index as */*
+  [1m[36mPenguin Load (0.4ms)[0m  [1m[34mSELECT "penguins".* FROM "penguins"[0m
+  ↳ app/controllers/penguins_controller.rb:6:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (0.12ms)
+Completed 200 OK in 5ms (Views: 3.8ms | ActiveRecord: 0.4ms | Allocations: 1434)
+
+
+Started GET "/penguins" for 127.0.0.1 at 2021-10-07 12:06:35 -0700
+Processing by PenguinsController#index as */*
+  [1m[36mPenguin Load (0.6ms)[0m  [1m[34mSELECT "penguins".* FROM "penguins"[0m
+  ↳ app/controllers/penguins_controller.rb:6:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (0.06ms)
+Completed 200 OK in 5ms (Views: 4.0ms | ActiveRecord: 0.6ms | Allocations: 1455)
+
+
+Started GET "/penguins" for 127.0.0.1 at 2021-10-07 12:06:39 -0700
+Processing by PenguinsController#index as */*
+  [1m[36mPenguin Load (0.4ms)[0m  [1m[34mSELECT "penguins".* FROM "penguins"[0m
+  ↳ app/controllers/penguins_controller.rb:6:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (0.07ms)
+Completed 200 OK in 4ms (Views: 3.8ms | ActiveRecord: 0.4ms | Allocations: 1433)
+
+
+Started GET "/penguins" for 127.0.0.1 at 2021-10-07 12:06:46 -0700
+Processing by PenguinsController#index as */*
+  [1m[36mPenguin Load (0.4ms)[0m  [1m[34mSELECT "penguins".* FROM "penguins"[0m
+  ↳ app/controllers/penguins_controller.rb:6:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (0.09ms)
+Completed 200 OK in 5ms (Views: 4.1ms | ActiveRecord: 0.4ms | Allocations: 1455)
+
+
+Started GET "/penguins" for 127.0.0.1 at 2021-10-07 12:33:04 -0700
+Processing by PenguinsController#index as */*
+  [1m[36mPenguin Load (0.9ms)[0m  [1m[34mSELECT "penguins".* FROM "penguins"[0m
+  ↳ app/controllers/penguins_controller.rb:6:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (0.09ms)
+Completed 200 OK in 44ms (Views: 43.9ms | ActiveRecord: 28.5ms | Allocations: 3546)
+
+
+Started GET "/penguins" for 127.0.0.1 at 2021-10-07 12:33:07 -0700
+Processing by PenguinsController#index as */*
+  [1m[36mPenguin Load (0.3ms)[0m  [1m[34mSELECT "penguins".* FROM "penguins"[0m
+  ↳ app/controllers/penguins_controller.rb:6:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (0.08ms)
+Completed 200 OK in 5ms (Views: 4.3ms | ActiveRecord: 0.3ms | Allocations: 1448)
+
+
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mCustomer Load (0.6ms)[0m  [1m[34mSELECT "customers".* FROM "customers"[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCustomer Destroy (0.9ms)[0m  [1m[31mDELETE FROM "customers" WHERE "customers"."id" = $1[0m  [["id", 7]]
+  [1m[36mTRANSACTION (1.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCustomer Destroy (0.4ms)[0m  [1m[31mDELETE FROM "customers" WHERE "customers"."id" = $1[0m  [["id", 8]]
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mPenguin Load (0.3ms)[0m  [1m[34mSELECT "penguins".* FROM "penguins"[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCustomer Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM "customers" WHERE "customers"."username" = $1 LIMIT $2[0m  [["username", "bobbyboy"], ["LIMIT", 1]]
+  [1m[36mCustomer Create (0.3ms)[0m  [1m[32mINSERT INTO "customers" ("username", "password", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["username", "bobbyboy"], ["password", "safepassword"], ["created_at", "2021-10-07 19:35:00.558265"], ["updated_at", "2021-10-07 19:35:00.558265"]]
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCustomer Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "customers" WHERE "customers"."username" = $1 LIMIT $2[0m  [["username", "josiequeen"], ["LIMIT", 1]]
+  [1m[36mCustomer Create (0.2ms)[0m  [1m[32mINSERT INTO "customers" ("username", "password", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["username", "josiequeen"], ["password", "safestpassword"], ["created_at", "2021-10-07 19:35:00.563288"], ["updated_at", "2021-10-07 19:35:00.563288"]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+Started GET "/penguins" for 127.0.0.1 at 2021-10-07 12:37:22 -0700
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PenguinsController#index as */*
+  [1m[36mPenguin Load (0.6ms)[0m  [1m[34mSELECT "penguins".* FROM "penguins"[0m
+  ↳ app/controllers/penguins_controller.rb:6:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (0.13ms)
+Completed 200 OK in 32ms (Views: 9.0ms | ActiveRecord: 0.6ms | Allocations: 5312)
+
+
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_try_advisory_lock(1087325618115650655)[0m
+  [1m[35m (3.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (3.4ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_advisory_unlock(1087325618115650655)[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/penguins" for 127.0.0.1 at 2021-10-07 13:05:18 -0700
+Processing by PenguinsController#index as */*
+  [1m[36mPenguin Load (1.8ms)[0m  [1m[34mSELECT "penguins".* FROM "penguins"[0m
+  ↳ app/controllers/penguins_controller.rb:6:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (0.07ms)
+Completed 200 OK in 29ms (Views: 25.1ms | ActiveRecord: 9.1ms | Allocations: 3959)
+
+
+Started GET "/penguins" for 127.0.0.1 at 2021-10-07 13:06:53 -0700
+Processing by PenguinsController#index as */*
+  [1m[36mPenguin Load (0.2ms)[0m  [1m[34mSELECT "penguins".* FROM "penguins"[0m
+  ↳ app/controllers/penguins_controller.rb:6:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (0.05ms)
+Completed 200 OK in 4ms (Views: 3.7ms | ActiveRecord: 0.2ms | Allocations: 1455)
+
+
+Started GET "/penguins" for 127.0.0.1 at 2021-10-07 13:07:00 -0700
+Processing by PenguinsController#index as */*
+  [1m[36mPenguin Load (0.2ms)[0m  [1m[34mSELECT "penguins".* FROM "penguins"[0m
+  ↳ app/controllers/penguins_controller.rb:6:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (0.05ms)
+Completed 200 OK in 5ms (Views: 4.3ms | ActiveRecord: 0.2ms | Allocations: 1455)
+
+
+Started GET "/" for 127.0.0.1 at 2021-10-07 13:07:46 -0700
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/connorcowan/.rvm/gems/ruby-2.7.4/gems/railties-6.1.3.2/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/connorcowan/.rvm/gems/ruby-2.7.4/gems/railties-6.1.3.2/lib/rails/templates/rails/welcome/index.html.erb (Duration: 9.6ms | Allocations: 294)
+Completed 200 OK in 25ms (Views: 15.0ms | ActiveRecord: 0.0ms | Allocations: 2273)
+
+
+Started GET "/penguins" for 127.0.0.1 at 2021-10-07 13:07:52 -0700
+Processing by PenguinsController#index as HTML
+  [1m[36mPenguin Load (0.3ms)[0m  [1m[34mSELECT "penguins".* FROM "penguins"[0m
+  ↳ app/controllers/penguins_controller.rb:6:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (0.13ms)
+Completed 200 OK in 5ms (Views: 3.7ms | ActiveRecord: 0.3ms | Allocations: 802)
+
+
+Started GET "/penguins/1" for 127.0.0.1 at 2021-10-07 13:08:01 -0700
+Processing by PenguinsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPenguin Load (0.3ms)[0m  [1m[34mSELECT "penguins".* FROM "penguins" WHERE "penguins"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/penguins_controller.rb:10:in `show'
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.12ms)
+Completed 404 Not Found in 22ms (Views: 4.4ms | ActiveRecord: 11.3ms | Allocations: 2168)
+
+
+Started GET "/penguins" for 127.0.0.1 at 2021-10-07 13:10:55 -0700
+Processing by PenguinsController#index as */*
+  [1m[36mPenguin Load (0.3ms)[0m  [1m[34mSELECT "penguins".* FROM "penguins"[0m
+  ↳ app/controllers/penguins_controller.rb:6:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (0.1ms)
+Completed 200 OK in 5ms (Views: 3.2ms | ActiveRecord: 0.3ms | Allocations: 1872)
+
+
+Started GET "/penguins/1" for 127.0.0.1 at 2021-10-07 13:10:59 -0700
+Processing by PenguinsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPenguin Load (0.3ms)[0m  [1m[34mSELECT "penguins".* FROM "penguins" WHERE "penguins"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/penguins_controller.rb:10:in `show'
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.06ms)
+Completed 404 Not Found in 8ms (Views: 0.7ms | ActiveRecord: 3.8ms | Allocations: 1556)
+
+
+Started GET "/penguins/" for 127.0.0.1 at 2021-10-07 13:11:02 -0700
+Processing by PenguinsController#index as HTML
+  [1m[36mPenguin Load (0.2ms)[0m  [1m[34mSELECT "penguins".* FROM "penguins"[0m
+  ↳ app/controllers/penguins_controller.rb:6:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (0.05ms)
+Completed 200 OK in 2ms (Views: 1.8ms | ActiveRecord: 0.2ms | Allocations: 796)
+
+
+Started GET "/penguins/" for 127.0.0.1 at 2021-10-07 13:11:06 -0700
+Processing by PenguinsController#index as HTML
+  [1m[36mPenguin Load (0.2ms)[0m  [1m[34mSELECT "penguins".* FROM "penguins"[0m
+  ↳ app/controllers/penguins_controller.rb:6:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (0.05ms)
+Completed 200 OK in 2ms (Views: 1.6ms | ActiveRecord: 0.2ms | Allocations: 796)
+
+
+Started GET "/penguins" for 127.0.0.1 at 2021-10-07 13:29:40 -0700
+Processing by PenguinsController#index as */*
+  [1m[36mPenguin Load (0.7ms)[0m  [1m[34mSELECT "penguins".* FROM "penguins"[0m
+  ↳ app/controllers/penguins_controller.rb:6:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (0.08ms)
+Completed 200 OK in 18ms (Views: 16.0ms | ActiveRecord: 5.7ms | Allocations: 3938)
+
+
+Started GET "/penguins/" for 127.0.0.1 at 2021-10-07 13:29:45 -0700
+Processing by PenguinsController#index as HTML
+  [1m[36mPenguin Load (0.3ms)[0m  [1m[34mSELECT "penguins".* FROM "penguins"[0m
+  ↳ app/controllers/penguins_controller.rb:6:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (0.06ms)
+Completed 200 OK in 2ms (Views: 1.9ms | ActiveRecord: 0.3ms | Allocations: 796)
+
+
+Started GET "/penguins" for 127.0.0.1 at 2021-10-07 13:29:51 -0700
+Processing by PenguinsController#index as HTML
+  [1m[36mPenguin Load (0.2ms)[0m  [1m[34mSELECT "penguins".* FROM "penguins"[0m
+  ↳ app/controllers/penguins_controller.rb:6:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (0.07ms)
+Completed 200 OK in 2ms (Views: 2.0ms | ActiveRecord: 0.2ms | Allocations: 796)
+
+
+Started GET "/customers" for 127.0.0.1 at 2021-10-07 13:29:56 -0700
+  
+AbstractController::ActionNotFound (The action 'index' could not be found for CustomersController
+Did you mean?  create
+               current_user
+               show):
+  
+actionpack (6.1.3.2) lib/abstract_controller/base.rb:160:in `process'
+actionpack (6.1.3.2) lib/action_controller/metal.rb:190:in `dispatch'
+actionpack (6.1.3.2) lib/action_controller/metal.rb:254:in `dispatch'
+actionpack (6.1.3.2) lib/action_dispatch/routing/route_set.rb:50:in `dispatch'
+actionpack (6.1.3.2) lib/action_dispatch/routing/route_set.rb:33:in `serve'
+actionpack (6.1.3.2) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (6.1.3.2) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (6.1.3.2) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (6.1.3.2) lib/action_dispatch/routing/route_set.rb:842:in `call'
+rack (2.2.3) lib/rack/session/abstract/id.rb:266:in `context'
+rack (2.2.3) lib/rack/session/abstract/id.rb:260:in `call'
+actionpack (6.1.3.2) lib/action_dispatch/middleware/cookies.rb:689:in `call'
+rack (2.2.3) lib/rack/etag.rb:27:in `call'
+rack (2.2.3) lib/rack/conditional_get.rb:27:in `call'
+rack (2.2.3) lib/rack/head.rb:12:in `call'
+activerecord (6.1.3.2) lib/active_record/migration.rb:601:in `call'
+actionpack (6.1.3.2) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.1.3.2) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (6.1.3.2) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.1.3.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.1.3.2) lib/action_dispatch/middleware/actionable_exceptions.rb:18:in `call'
+actionpack (6.1.3.2) lib/action_dispatch/middleware/debug_exceptions.rb:29:in `call'
+actionpack (6.1.3.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.1.3.2) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.1.3.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.1.3.2) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (6.1.3.2) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (6.1.3.2) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (6.1.3.2) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.1.3.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.1.3.2) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.1.3.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.1.3.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.1.3.2) lib/action_dispatch/middleware/static.rb:24:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.1.3.2) lib/action_dispatch/middleware/host_authorization.rb:98:in `call'
+railties (6.1.3.2) lib/rails/engine.rb:539:in `call'
+puma (5.3.2) lib/puma/configuration.rb:249:in `call'
+puma (5.3.2) lib/puma/request.rb:77:in `block in handle_request'
+puma (5.3.2) lib/puma/thread_pool.rb:338:in `with_force_shutdown'
+puma (5.3.2) lib/puma/request.rb:76:in `handle_request'
+puma (5.3.2) lib/puma/server.rb:438:in `process_client'
+puma (5.3.2) lib/puma/thread_pool.rb:145:in `block in spawn_thread'
+Started GET "/customers" for 127.0.0.1 at 2021-10-07 13:30:37 -0700
+Processing by CustomersController#index as HTML
+  [1m[36mCustomer Load (0.5ms)[0m  [1m[34mSELECT "customers".* FROM "customers"[0m
+  ↳ app/controllers/customers_controller.rb:4:in `index'
+No serializer found for resource: #<Customer id: 9, username: "bobbyboy", password: [FILTERED], created_at: "2021-10-07 19:35:00.558265000 +0000", updated_at: "2021-10-07 19:35:00.558265000 +0000">
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with Customer::ActiveRecord_Relation (0.27ms)
+Completed 200 OK in 22ms (Views: 7.4ms | ActiveRecord: 9.2ms | Allocations: 5159)
+
+
+Started GET "/customers" for 127.0.0.1 at 2021-10-07 13:30:39 -0700
+Processing by CustomersController#index as HTML
+  [1m[36mCustomer Load (0.3ms)[0m  [1m[34mSELECT "customers".* FROM "customers"[0m
+  ↳ app/controllers/customers_controller.rb:4:in `index'
+No serializer found for resource: #<Customer id: 9, username: "bobbyboy", password: [FILTERED], created_at: "2021-10-07 19:35:00.558265000 +0000", updated_at: "2021-10-07 19:35:00.558265000 +0000">
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with Customer::ActiveRecord_Relation (0.23ms)
+Completed 200 OK in 3ms (Views: 2.7ms | ActiveRecord: 0.3ms | Allocations: 1033)
+
+
+Started GET "/penguins" for 127.0.0.1 at 2021-10-07 13:31:49 -0700
+Processing by PenguinsController#index as */*
+  [1m[36mPenguin Load (0.4ms)[0m  [1m[34mSELECT "penguins".* FROM "penguins"[0m
+  ↳ app/controllers/penguins_controller.rb:6:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (0.13ms)
+Completed 200 OK in 8ms (Views: 4.3ms | ActiveRecord: 0.4ms | Allocations: 1982)
+
+
+Started GET "/customers" for 127.0.0.1 at 2021-10-07 13:32:32 -0700
+Processing by CustomersController#index as HTML
+  [1m[36mCustomer Load (0.2ms)[0m  [1m[34mSELECT "customers".* FROM "customers"[0m
+  ↳ app/controllers/customers_controller.rb:4:in `index'
+No serializer found for resource: #<Customer id: 9, username: "bobbyboy", password: [FILTERED], created_at: "2021-10-07 19:35:00.558265000 +0000", updated_at: "2021-10-07 19:35:00.558265000 +0000">
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with Customer::ActiveRecord_Relation (0.24ms)
+Completed 200 OK in 11ms (Views: 6.0ms | ActiveRecord: 2.7ms | Allocations: 4191)
+
+
+Started GET "/customers" for 127.0.0.1 at 2021-10-07 13:32:33 -0700
+Processing by CustomersController#index as HTML
+  [1m[36mCustomer Load (0.2ms)[0m  [1m[34mSELECT "customers".* FROM "customers"[0m
+  ↳ app/controllers/customers_controller.rb:4:in `index'
+No serializer found for resource: #<Customer id: 9, username: "bobbyboy", password: [FILTERED], created_at: "2021-10-07 19:35:00.558265000 +0000", updated_at: "2021-10-07 19:35:00.558265000 +0000">
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with Customer::ActiveRecord_Relation (0.32ms)
+Completed 200 OK in 3ms (Views: 2.5ms | ActiveRecord: 0.2ms | Allocations: 1033)
+
+
+Started GET "/customers" for 127.0.0.1 at 2021-10-07 13:33:22 -0700
+Processing by CustomersController#index as HTML
+  [1m[36mCustomer Load (0.2ms)[0m  [1m[34mSELECT "customers".* FROM "customers"[0m
+  ↳ app/controllers/customers_controller.rb:4:in `index'
+No serializer found for resource: #<Customer id: 9, username: "bobbyboy", password: [FILTERED], created_at: "2021-10-07 19:35:00.558265000 +0000", updated_at: "2021-10-07 19:35:00.558265000 +0000">
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with Customer::ActiveRecord_Relation (0.24ms)
+Completed 200 OK in 10ms (Views: 5.8ms | ActiveRecord: 2.6ms | Allocations: 4170)
+
+
+Started GET "/penguins" for 127.0.0.1 at 2021-10-07 13:33:26 -0700
+Processing by PenguinsController#index as HTML
+  [1m[36mPenguin Load (0.2ms)[0m  [1m[34mSELECT "penguins".* FROM "penguins"[0m
+  ↳ app/controllers/penguins_controller.rb:6:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (0.1ms)
+Completed 200 OK in 4ms (Views: 2.0ms | ActiveRecord: 0.2ms | Allocations: 1198)
+
+
+Started GET "/penguins" for 127.0.0.1 at 2021-10-07 13:33:28 -0700
+Processing by PenguinsController#index as HTML
+  [1m[36mPenguin Load (0.3ms)[0m  [1m[34mSELECT "penguins".* FROM "penguins"[0m
+  ↳ app/controllers/penguins_controller.rb:6:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (0.05ms)
+Completed 200 OK in 2ms (Views: 1.7ms | ActiveRecord: 0.3ms | Allocations: 802)
+
+
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.6ms)[0m  [1m[35mALTER TABLE "schema_migrations" DISABLE TRIGGER ALL;ALTER TABLE "ar_internal_metadata" DISABLE TRIGGER ALL;ALTER TABLE "customers" DISABLE TRIGGER ALL;ALTER TABLE "penguins" DISABLE TRIGGER ALL[0m
+  [1m[36mTRANSACTION (2.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (5.7ms)[0m  [1m[35mTRUNCATE TABLE "customers", "penguins"[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.3ms)[0m  [1m[35mALTER TABLE "schema_migrations" ENABLE TRIGGER ALL;ALTER TABLE "ar_internal_metadata" ENABLE TRIGGER ALL;ALTER TABLE "customers" ENABLE TRIGGER ALL;ALTER TABLE "penguins" ENABLE TRIGGER ALL[0m
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mCustomer Load (0.6ms)[0m  [1m[34mSELECT "customers".* FROM "customers"[0m
+  [1m[36mPenguin Load (0.6ms)[0m  [1m[34mSELECT "penguins".* FROM "penguins"[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCustomer Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM "customers" WHERE "customers"."username" = $1 LIMIT $2[0m  [["username", "bobbyboy"], ["LIMIT", 1]]
+  [1m[36mCustomer Create (0.6ms)[0m  [1m[32mINSERT INTO "customers" ("username", "password", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["username", "bobbyboy"], ["password", "safepassword"], ["created_at", "2021-10-07 20:34:18.581503"], ["updated_at", "2021-10-07 20:34:18.581503"]]
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCustomer Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM "customers" WHERE "customers"."username" = $1 LIMIT $2[0m  [["username", "josiequeen"], ["LIMIT", 1]]
+  [1m[36mCustomer Create (0.4ms)[0m  [1m[32mINSERT INTO "customers" ("username", "password", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["username", "josiequeen"], ["password", "safestpassword"], ["created_at", "2021-10-07 20:34:18.587768"], ["updated_at", "2021-10-07 20:34:18.587768"]]
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.6ms)[0m  [1m[35mALTER TABLE "schema_migrations" DISABLE TRIGGER ALL;ALTER TABLE "ar_internal_metadata" DISABLE TRIGGER ALL;ALTER TABLE "customers" DISABLE TRIGGER ALL;ALTER TABLE "penguins" DISABLE TRIGGER ALL[0m
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (5.2ms)[0m  [1m[35mTRUNCATE TABLE "customers", "penguins"[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mALTER TABLE "schema_migrations" ENABLE TRIGGER ALL;ALTER TABLE "ar_internal_metadata" ENABLE TRIGGER ALL;ALTER TABLE "customers" ENABLE TRIGGER ALL;ALTER TABLE "penguins" ENABLE TRIGGER ALL[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mCustomer Load (0.6ms)[0m  [1m[34mSELECT "customers".* FROM "customers"[0m
+  [1m[36mPenguin Load (0.6ms)[0m  [1m[34mSELECT "penguins".* FROM "penguins"[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCustomer Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM "customers" WHERE "customers"."username" = $1 LIMIT $2[0m  [["username", "bobbyboy"], ["LIMIT", 1]]
+  [1m[36mCustomer Create (0.6ms)[0m  [1m[32mINSERT INTO "customers" ("username", "password", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["username", "bobbyboy"], ["password", "safepassword"], ["created_at", "2021-10-07 20:35:36.140959"], ["updated_at", "2021-10-07 20:35:36.140959"]]
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCustomer Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "customers" WHERE "customers"."username" = $1 LIMIT $2[0m  [["username", "josiequeen"], ["LIMIT", 1]]
+  [1m[36mCustomer Create (0.2ms)[0m  [1m[32mINSERT INTO "customers" ("username", "password", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["username", "josiequeen"], ["password", "safestpassword"], ["created_at", "2021-10-07 20:35:36.146586"], ["updated_at", "2021-10-07 20:35:36.146586"]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.6ms)[0m  [1m[35mALTER TABLE "schema_migrations" DISABLE TRIGGER ALL;ALTER TABLE "ar_internal_metadata" DISABLE TRIGGER ALL;ALTER TABLE "customers" DISABLE TRIGGER ALL;ALTER TABLE "penguins" DISABLE TRIGGER ALL[0m
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (6.5ms)[0m  [1m[35mTRUNCATE TABLE "customers", "penguins"[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mALTER TABLE "schema_migrations" ENABLE TRIGGER ALL;ALTER TABLE "ar_internal_metadata" ENABLE TRIGGER ALL;ALTER TABLE "customers" ENABLE TRIGGER ALL;ALTER TABLE "penguins" ENABLE TRIGGER ALL[0m
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mCustomer Load (0.6ms)[0m  [1m[34mSELECT "customers".* FROM "customers"[0m
+  [1m[36mPenguin Load (0.9ms)[0m  [1m[34mSELECT "penguins".* FROM "penguins"[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCustomer Exists? (0.5ms)[0m  [1m[34mSELECT 1 AS one FROM "customers" WHERE "customers"."username" = $1 LIMIT $2[0m  [["username", "bobbyboy"], ["LIMIT", 1]]
+  [1m[36mCustomer Create (0.6ms)[0m  [1m[32mINSERT INTO "customers" ("username", "password", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["username", "bobbyboy"], ["password", "safepassword"], ["created_at", "2021-10-07 21:04:02.531673"], ["updated_at", "2021-10-07 21:04:02.531673"]]
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCustomer Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "customers" WHERE "customers"."username" = $1 LIMIT $2[0m  [["username", "josiequeen"], ["LIMIT", 1]]
+  [1m[36mCustomer Create (0.2ms)[0m  [1m[32mINSERT INTO "customers" ("username", "password", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["username", "josiequeen"], ["password", "safestpassword"], ["created_at", "2021-10-07 21:04:02.537881"], ["updated_at", "2021-10-07 21:04:02.537881"]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.5ms)[0m  [1m[35mALTER TABLE "schema_migrations" DISABLE TRIGGER ALL;ALTER TABLE "ar_internal_metadata" DISABLE TRIGGER ALL;ALTER TABLE "customers" DISABLE TRIGGER ALL;ALTER TABLE "penguins" DISABLE TRIGGER ALL[0m
+  [1m[36mTRANSACTION (0.8ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (5.2ms)[0m  [1m[35mTRUNCATE TABLE "customers", "penguins"[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mALTER TABLE "schema_migrations" ENABLE TRIGGER ALL;ALTER TABLE "ar_internal_metadata" ENABLE TRIGGER ALL;ALTER TABLE "customers" ENABLE TRIGGER ALL;ALTER TABLE "penguins" ENABLE TRIGGER ALL[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mCustomer Load (0.5ms)[0m  [1m[34mSELECT "customers".* FROM "customers"[0m
+  [1m[36mPenguin Load (0.6ms)[0m  [1m[34mSELECT "penguins".* FROM "penguins"[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCustomer Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM "customers" WHERE "customers"."username" = $1 LIMIT $2[0m  [["username", "bobbyboy"], ["LIMIT", 1]]
+  [1m[36mCustomer Create (0.6ms)[0m  [1m[32mINSERT INTO "customers" ("username", "password", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["username", "bobbyboy"], ["password", "safepassword"], ["created_at", "2021-10-07 21:05:37.054451"], ["updated_at", "2021-10-07 21:05:37.054451"]]
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCustomer Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "customers" WHERE "customers"."username" = $1 LIMIT $2[0m  [["username", "josiequeen"], ["LIMIT", 1]]
+  [1m[36mCustomer Create (0.2ms)[0m  [1m[32mINSERT INTO "customers" ("username", "password", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["username", "josiequeen"], ["password", "safestpassword"], ["created_at", "2021-10-07 21:05:37.060080"], ["updated_at", "2021-10-07 21:05:37.060080"]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mCustomer Load (0.6ms)[0m  [1m[34mSELECT "customers".* FROM "customers"[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCustomer Destroy (0.8ms)[0m  [1m[31mDELETE FROM "customers" WHERE "customers"."id" = $1[0m  [["id", 17]]
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCustomer Destroy (0.4ms)[0m  [1m[31mDELETE FROM "customers" WHERE "customers"."id" = $1[0m  [["id", 18]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mPenguin Load (0.3ms)[0m  [1m[34mSELECT "penguins".* FROM "penguins"[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCustomer Exists? (0.5ms)[0m  [1m[34mSELECT 1 AS one FROM "customers" WHERE "customers"."username" = $1 LIMIT $2[0m  [["username", "bobbyboy"], ["LIMIT", 1]]
+  [1m[36mCustomer Create (0.4ms)[0m  [1m[32mINSERT INTO "customers" ("username", "password", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["username", "bobbyboy"], ["password", "safepassword"], ["created_at", "2021-10-07 21:05:51.222403"], ["updated_at", "2021-10-07 21:05:51.222403"]]
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCustomer Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM "customers" WHERE "customers"."username" = $1 LIMIT $2[0m  [["username", "josiequeen"], ["LIMIT", 1]]
+  [1m[36mCustomer Create (0.3ms)[0m  [1m[32mINSERT INTO "customers" ("username", "password", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["username", "josiequeen"], ["password", "safestpassword"], ["created_at", "2021-10-07 21:05:51.229215"], ["updated_at", "2021-10-07 21:05:51.229215"]]
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mCustomer Load (1.7ms)[0m  [1m[34mSELECT "customers".* FROM "customers"[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCustomer Destroy (0.8ms)[0m  [1m[31mDELETE FROM "customers" WHERE "customers"."id" = $1[0m  [["id", 19]]
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCustomer Destroy (0.4ms)[0m  [1m[31mDELETE FROM "customers" WHERE "customers"."id" = $1[0m  [["id", 20]]
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mPenguin Load (0.6ms)[0m  [1m[34mSELECT "penguins".* FROM "penguins"[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCustomer Exists? (0.5ms)[0m  [1m[34mSELECT 1 AS one FROM "customers" WHERE "customers"."username" = $1 LIMIT $2[0m  [["username", "bobbyboy"], ["LIMIT", 1]]
+  [1m[36mCustomer Create (0.4ms)[0m  [1m[32mINSERT INTO "customers" ("username", "password", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["username", "bobbyboy"], ["password", "safepassword"], ["created_at", "2021-10-07 21:06:07.365420"], ["updated_at", "2021-10-07 21:06:07.365420"]]
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCustomer Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "customers" WHERE "customers"."username" = $1 LIMIT $2[0m  [["username", "josiequeen"], ["LIMIT", 1]]
+  [1m[36mCustomer Create (0.2ms)[0m  [1m[32mINSERT INTO "customers" ("username", "password", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["username", "josiequeen"], ["password", "safestpassword"], ["created_at", "2021-10-07 21:06:07.370774"], ["updated_at", "2021-10-07 21:06:07.370774"]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mCustomer Load (1.0ms)[0m  [1m[34mSELECT "customers".* FROM "customers"[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCustomer Destroy (1.0ms)[0m  [1m[31mDELETE FROM "customers" WHERE "customers"."id" = $1[0m  [["id", 21]]
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCustomer Destroy (0.5ms)[0m  [1m[31mDELETE FROM "customers" WHERE "customers"."id" = $1[0m  [["id", 22]]
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mPenguin Load (0.3ms)[0m  [1m[34mSELECT "penguins".* FROM "penguins"[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCustomer Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM "customers" WHERE "customers"."username" = $1 LIMIT $2[0m  [["username", "bobbyboy"], ["LIMIT", 1]]
+  [1m[36mCustomer Create (0.4ms)[0m  [1m[32mINSERT INTO "customers" ("username", "password", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["username", "bobbyboy"], ["password", "safepassword"], ["created_at", "2021-10-07 21:06:15.705044"], ["updated_at", "2021-10-07 21:06:15.705044"]]
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCustomer Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "customers" WHERE "customers"."username" = $1 LIMIT $2[0m  [["username", "josiequeen"], ["LIMIT", 1]]
+  [1m[36mCustomer Create (0.4ms)[0m  [1m[32mINSERT INTO "customers" ("username", "password", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["username", "josiequeen"], ["password", "safestpassword"], ["created_at", "2021-10-07 21:06:15.710619"], ["updated_at", "2021-10-07 21:06:15.710619"]]
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mCustomer Load (0.9ms)[0m  [1m[34mSELECT "customers".* FROM "customers"[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCustomer Destroy (1.0ms)[0m  [1m[31mDELETE FROM "customers" WHERE "customers"."id" = $1[0m  [["id", 23]]
+  [1m[36mTRANSACTION (0.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCustomer Destroy (0.4ms)[0m  [1m[31mDELETE FROM "customers" WHERE "customers"."id" = $1[0m  [["id", 24]]
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mPenguin Load (0.3ms)[0m  [1m[34mSELECT "penguins".* FROM "penguins"[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCustomer Exists? (0.5ms)[0m  [1m[34mSELECT 1 AS one FROM "customers" WHERE "customers"."username" = $1 LIMIT $2[0m  [["username", "bobbyboy"], ["LIMIT", 1]]
+  [1m[36mCustomer Create (0.4ms)[0m  [1m[32mINSERT INTO "customers" ("username", "password", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["username", "bobbyboy"], ["password", "safepassword"], ["created_at", "2021-10-07 21:06:37.152762"], ["updated_at", "2021-10-07 21:06:37.152762"]]
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCustomer Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "customers" WHERE "customers"."username" = $1 LIMIT $2[0m  [["username", "josiequeen"], ["LIMIT", 1]]
+  [1m[36mCustomer Create (0.2ms)[0m  [1m[32mINSERT INTO "customers" ("username", "password", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["username", "josiequeen"], ["password", "safestpassword"], ["created_at", "2021-10-07 21:06:37.158577"], ["updated_at", "2021-10-07 21:06:37.158577"]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mCustomer Load (1.3ms)[0m  [1m[34mSELECT "customers".* FROM "customers"[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCustomer Destroy (1.1ms)[0m  [1m[31mDELETE FROM "customers" WHERE "customers"."id" = $1[0m  [["id", 25]]
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCustomer Destroy (0.4ms)[0m  [1m[31mDELETE FROM "customers" WHERE "customers"."id" = $1[0m  [["id", 26]]
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mPenguin Load (0.3ms)[0m  [1m[34mSELECT "penguins".* FROM "penguins"[0m
+Started GET "/penguins" for 127.0.0.1 at 2021-10-07 14:12:09 -0700
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PenguinsController#index as */*
+  [1m[36mPenguin Load (0.7ms)[0m  [1m[34mSELECT "penguins".* FROM "penguins"[0m
+  ↳ app/controllers/penguins_controller.rb:6:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (0.09ms)
+Completed 200 OK in 5ms (Views: 2.8ms | ActiveRecord: 0.7ms | Allocations: 2010)
+
+
+Started GET "/penguins" for 127.0.0.1 at 2021-10-07 14:14:40 -0700
+Processing by PenguinsController#index as HTML
+  [1m[36mPenguin Load (0.2ms)[0m  [1m[34mSELECT "penguins".* FROM "penguins"[0m
+  ↳ app/controllers/penguins_controller.rb:6:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (0.07ms)
+Completed 200 OK in 3ms (Views: 1.5ms | ActiveRecord: 0.2ms | Allocations: 1304)
+
+
+Started GET "/penguins" for 127.0.0.1 at 2021-10-07 14:14:41 -0700
+Processing by PenguinsController#index as HTML
+  [1m[36mPenguin Load (0.3ms)[0m  [1m[34mSELECT "penguins".* FROM "penguins"[0m
+  ↳ app/controllers/penguins_controller.rb:6:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (0.06ms)
+Completed 200 OK in 3ms (Views: 2.0ms | ActiveRecord: 0.3ms | Allocations: 796)
+
+
+Started GET "/penguins" for 127.0.0.1 at 2021-10-07 14:14:42 -0700
+Processing by PenguinsController#index as HTML
+  [1m[36mPenguin Load (0.2ms)[0m  [1m[34mSELECT "penguins".* FROM "penguins"[0m
+  ↳ app/controllers/penguins_controller.rb:6:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (0.05ms)
+Completed 200 OK in 2ms (Views: 1.8ms | ActiveRecord: 0.2ms | Allocations: 796)
+
+
+Started GET "/penguins" for 127.0.0.1 at 2021-10-07 14:14:43 -0700
+Processing by PenguinsController#index as HTML
+  [1m[36mPenguin Load (0.2ms)[0m  [1m[34mSELECT "penguins".* FROM "penguins"[0m
+  ↳ app/controllers/penguins_controller.rb:6:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (0.05ms)
+Completed 200 OK in 2ms (Views: 1.8ms | ActiveRecord: 0.2ms | Allocations: 796)
+
+
+Started GET "/penguins" for 127.0.0.1 at 2021-10-07 14:14:57 -0700
+Processing by PenguinsController#index as HTML
+  [1m[36mPenguin Load (0.2ms)[0m  [1m[34mSELECT "penguins".* FROM "penguins"[0m
+  ↳ app/controllers/penguins_controller.rb:6:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (0.06ms)
+Completed 200 OK in 6ms (Views: 1.8ms | ActiveRecord: 0.2ms | Allocations: 1254)
+
+
+Started GET "/penguins" for 127.0.0.1 at 2021-10-07 14:14:58 -0700
+Processing by PenguinsController#index as HTML
+  [1m[36mPenguin Load (0.2ms)[0m  [1m[34mSELECT "penguins".* FROM "penguins"[0m
+  ↳ app/controllers/penguins_controller.rb:6:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (0.06ms)
+Completed 200 OK in 2ms (Views: 1.8ms | ActiveRecord: 0.2ms | Allocations: 796)
+
+
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mCustomer Load (0.9ms)[0m  [1m[34mSELECT "customers".* FROM "customers"[0m
+  [1m[36mPenguin Load (0.7ms)[0m  [1m[34mSELECT "penguins".* FROM "penguins"[0m
+Started GET "/penguins" for 127.0.0.1 at 2021-10-07 14:15:06 -0700
+Processing by PenguinsController#index as HTML
+  [1m[36mPenguin Load (0.2ms)[0m  [1m[34mSELECT "penguins".* FROM "penguins"[0m
+  ↳ app/controllers/penguins_controller.rb:6:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (0.13ms)
+Completed 200 OK in 2ms (Views: 1.9ms | ActiveRecord: 0.2ms | Allocations: 796)
+
+
+Started GET "/penguins" for 127.0.0.1 at 2021-10-07 14:15:07 -0700
+Processing by PenguinsController#index as HTML
+  [1m[36mPenguin Load (0.2ms)[0m  [1m[34mSELECT "penguins".* FROM "penguins"[0m
+  ↳ app/controllers/penguins_controller.rb:6:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (0.07ms)
+Completed 200 OK in 2ms (Views: 1.9ms | ActiveRecord: 0.2ms | Allocations: 796)
+
+
+Started GET "/penguins" for 127.0.0.1 at 2021-10-07 14:16:07 -0700
+Processing by PenguinsController#index as HTML
+  [1m[36mPenguin Load (0.2ms)[0m  [1m[34mSELECT "penguins".* FROM "penguins"[0m
+  ↳ app/controllers/penguins_controller.rb:6:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (0.1ms)
+Completed 200 OK in 5ms (Views: 2.7ms | ActiveRecord: 0.2ms | Allocations: 1222)
+
+
+Started GET "/penguins" for 127.0.0.1 at 2021-10-07 14:16:08 -0700
+Processing by PenguinsController#index as HTML
+  [1m[36mPenguin Load (0.2ms)[0m  [1m[34mSELECT "penguins".* FROM "penguins"[0m
+  ↳ app/controllers/penguins_controller.rb:6:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (0.11ms)
+Completed 200 OK in 2ms (Views: 1.9ms | ActiveRecord: 0.2ms | Allocations: 796)
+
+
+Started GET "/penguins" for 127.0.0.1 at 2021-10-07 14:16:08 -0700
+Processing by PenguinsController#index as HTML
+  [1m[36mPenguin Load (0.2ms)[0m  [1m[34mSELECT "penguins".* FROM "penguins"[0m
+  ↳ app/controllers/penguins_controller.rb:6:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (0.06ms)
+Completed 200 OK in 2ms (Views: 1.9ms | ActiveRecord: 0.2ms | Allocations: 796)
+
+
+Started GET "/penguins/1" for 127.0.0.1 at 2021-10-07 14:16:12 -0700
+  
+AbstractController::ActionNotFound (The action 'show' could not be found for PenguinsController
+Did you mean?  current_user
+               index
+               create):
+  
+actionpack (6.1.3.2) lib/abstract_controller/base.rb:160:in `process'
+actionpack (6.1.3.2) lib/action_controller/metal.rb:190:in `dispatch'
+actionpack (6.1.3.2) lib/action_controller/metal.rb:254:in `dispatch'
+actionpack (6.1.3.2) lib/action_dispatch/routing/route_set.rb:50:in `dispatch'
+actionpack (6.1.3.2) lib/action_dispatch/routing/route_set.rb:33:in `serve'
+actionpack (6.1.3.2) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (6.1.3.2) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (6.1.3.2) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (6.1.3.2) lib/action_dispatch/routing/route_set.rb:842:in `call'
+rack (2.2.3) lib/rack/session/abstract/id.rb:266:in `context'
+rack (2.2.3) lib/rack/session/abstract/id.rb:260:in `call'
+actionpack (6.1.3.2) lib/action_dispatch/middleware/cookies.rb:689:in `call'
+rack (2.2.3) lib/rack/etag.rb:27:in `call'
+rack (2.2.3) lib/rack/conditional_get.rb:27:in `call'
+rack (2.2.3) lib/rack/head.rb:12:in `call'
+activerecord (6.1.3.2) lib/active_record/migration.rb:601:in `call'
+actionpack (6.1.3.2) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.1.3.2) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (6.1.3.2) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.1.3.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.1.3.2) lib/action_dispatch/middleware/actionable_exceptions.rb:18:in `call'
+actionpack (6.1.3.2) lib/action_dispatch/middleware/debug_exceptions.rb:29:in `call'
+actionpack (6.1.3.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.1.3.2) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.1.3.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.1.3.2) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (6.1.3.2) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (6.1.3.2) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (6.1.3.2) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.1.3.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.1.3.2) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.1.3.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.1.3.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.1.3.2) lib/action_dispatch/middleware/static.rb:24:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.1.3.2) lib/action_dispatch/middleware/host_authorization.rb:98:in `call'
+railties (6.1.3.2) lib/rails/engine.rb:539:in `call'
+puma (5.3.2) lib/puma/configuration.rb:249:in `call'
+puma (5.3.2) lib/puma/request.rb:77:in `block in handle_request'
+puma (5.3.2) lib/puma/thread_pool.rb:338:in `with_force_shutdown'
+puma (5.3.2) lib/puma/request.rb:76:in `handle_request'
+puma (5.3.2) lib/puma/server.rb:438:in `process_client'
+puma (5.3.2) lib/puma/thread_pool.rb:145:in `block in spawn_thread'
+Started GET "/penguins/1" for 127.0.0.1 at 2021-10-07 14:17:48 -0700
+Processing by PenguinsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPenguin Load (0.2ms)[0m  [1m[34mSELECT "penguins".* FROM "penguins" WHERE "penguins"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/penguins_controller.rb:20:in `show'
+Completed 404 Not Found in 9ms (ActiveRecord: 5.1ms | Allocations: 1863)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Penguin with 'id'=1):
+  
+app/controllers/penguins_controller.rb:20:in `show'
+Started GET "/penguins/1" for 127.0.0.1 at 2021-10-07 14:17:49 -0700
+Processing by PenguinsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPenguin Load (0.3ms)[0m  [1m[34mSELECT "penguins".* FROM "penguins" WHERE "penguins"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/penguins_controller.rb:20:in `show'
+Completed 404 Not Found in 2ms (ActiveRecord: 0.3ms | Allocations: 515)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Penguin with 'id'=1):
+  
+app/controllers/penguins_controller.rb:20:in `show'
+Started GET "/penguins/1" for 127.0.0.1 at 2021-10-07 14:31:31 -0700
+Processing by PenguinsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPenguin Load (0.4ms)[0m  [1m[34mSELECT "penguins".* FROM "penguins" WHERE "penguins"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/penguins_controller.rb:20:in `show'
+Completed 404 Not Found in 14ms (ActiveRecord: 5.1ms | Allocations: 3453)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Penguin with 'id'=1):
+  
+app/controllers/penguins_controller.rb:20:in `show'
+Started GET "/penguins/1" for 127.0.0.1 at 2021-10-07 14:31:32 -0700
+Processing by PenguinsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPenguin Load (0.5ms)[0m  [1m[34mSELECT "penguins".* FROM "penguins" WHERE "penguins"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/penguins_controller.rb:20:in `show'
+Completed 404 Not Found in 24ms (ActiveRecord: 0.5ms | Allocations: 514)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Penguin with 'id'=1):
+  
+app/controllers/penguins_controller.rb:20:in `show'
+Started GET "/penguins/" for 127.0.0.1 at 2021-10-07 14:31:34 -0700
+Processing by PenguinsController#index as HTML
+  [1m[36mPenguin Load (0.2ms)[0m  [1m[34mSELECT "penguins".* FROM "penguins"[0m
+  ↳ app/controllers/penguins_controller.rb:6:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (0.07ms)
+Completed 200 OK in 3ms (Views: 2.1ms | ActiveRecord: 0.2ms | Allocations: 806)
+
+
+Started GET "/penguins/" for 127.0.0.1 at 2021-10-07 14:31:35 -0700
+Processing by PenguinsController#index as HTML
+  [1m[36mPenguin Load (0.2ms)[0m  [1m[34mSELECT "penguins".* FROM "penguins"[0m
+  ↳ app/controllers/penguins_controller.rb:6:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (0.11ms)
+Completed 200 OK in 2ms (Views: 2.0ms | ActiveRecord: 0.2ms | Allocations: 796)
+
+
+Started GET "/penguins/" for 127.0.0.1 at 2021-10-07 14:32:06 -0700
+Processing by PenguinsController#index as HTML
+  [1m[36mPenguin Load (0.2ms)[0m  [1m[34mSELECT "penguins".* FROM "penguins"[0m
+  ↳ app/controllers/penguins_controller.rb:6:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (0.18ms)
+Completed 200 OK in 3ms (Views: 2.2ms | ActiveRecord: 0.2ms | Allocations: 796)
+
+
+Started GET "/penguins/" for 127.0.0.1 at 2021-10-07 14:32:07 -0700
+Processing by PenguinsController#index as HTML
+  [1m[36mPenguin Load (0.2ms)[0m  [1m[34mSELECT "penguins".* FROM "penguins"[0m
+  ↳ app/controllers/penguins_controller.rb:6:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (0.06ms)
+Completed 200 OK in 2ms (Views: 1.8ms | ActiveRecord: 0.2ms | Allocations: 796)
+
+
+Started GET "/penguins/" for 127.0.0.1 at 2021-10-07 14:32:07 -0700
+Processing by PenguinsController#index as HTML
+  [1m[36mPenguin Load (0.2ms)[0m  [1m[34mSELECT "penguins".* FROM "penguins"[0m
+  ↳ app/controllers/penguins_controller.rb:6:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (0.05ms)
+Completed 200 OK in 3ms (Views: 2.1ms | ActiveRecord: 0.2ms | Allocations: 796)
+
+
+Started GET "/penguins/" for 127.0.0.1 at 2021-10-07 14:32:21 -0700
+Processing by PenguinsController#index as HTML
+  [1m[36mPenguin Load (0.3ms)[0m  [1m[34mSELECT "penguins".* FROM "penguins"[0m
+  ↳ app/controllers/penguins_controller.rb:6:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (0.07ms)
+Completed 200 OK in 4ms (Views: 2.7ms | ActiveRecord: 0.3ms | Allocations: 796)
+
+
+Started GET "/penguins/" for 127.0.0.1 at 2021-10-07 14:32:21 -0700
+Processing by PenguinsController#index as HTML
+  [1m[36mPenguin Load (0.2ms)[0m  [1m[34mSELECT "penguins".* FROM "penguins"[0m
+  ↳ app/controllers/penguins_controller.rb:6:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (0.06ms)
+Completed 200 OK in 2ms (Views: 2.0ms | ActiveRecord: 0.2ms | Allocations: 796)
+
+
+Started GET "/penguins/" for 127.0.0.1 at 2021-10-07 14:32:22 -0700
+Processing by PenguinsController#index as HTML
+  [1m[36mPenguin Load (0.2ms)[0m  [1m[34mSELECT "penguins".* FROM "penguins"[0m
+  ↳ app/controllers/penguins_controller.rb:6:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (0.07ms)
+Completed 200 OK in 3ms (Views: 2.1ms | ActiveRecord: 0.2ms | Allocations: 796)
+
+
+Started GET "/customers" for 127.0.0.1 at 2021-10-07 14:32:40 -0700
+Processing by CustomersController#index as HTML
+  [1m[36mCustomer Load (0.4ms)[0m  [1m[34mSELECT "customers".* FROM "customers"[0m
+  ↳ app/controllers/customers_controller.rb:4:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (0.06ms)
+Completed 200 OK in 4ms (Views: 1.6ms | ActiveRecord: 0.4ms | Allocations: 1479)
+
+
+Started GET "/customers" for 127.0.0.1 at 2021-10-07 14:32:41 -0700
+Processing by CustomersController#index as HTML
+  [1m[36mCustomer Load (0.2ms)[0m  [1m[34mSELECT "customers".* FROM "customers"[0m
+  ↳ app/controllers/customers_controller.rb:4:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (0.05ms)
+Completed 200 OK in 2ms (Views: 1.8ms | ActiveRecord: 0.2ms | Allocations: 786)
+
+
+Started GET "/customers" for 127.0.0.1 at 2021-10-07 14:32:41 -0700
+Processing by CustomersController#index as HTML
+  [1m[36mCustomer Load (0.2ms)[0m  [1m[34mSELECT "customers".* FROM "customers"[0m
+  ↳ app/controllers/customers_controller.rb:4:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (0.05ms)
+Completed 200 OK in 2ms (Views: 1.7ms | ActiveRecord: 0.2ms | Allocations: 786)
+
+
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mCustomer Load (0.5ms)[0m  [1m[34mSELECT "customers".* FROM "customers"[0m
+  [1m[36mPenguin Load (0.5ms)[0m  [1m[34mSELECT "penguins".* FROM "penguins"[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCustomer Exists? (0.5ms)[0m  [1m[34mSELECT 1 AS one FROM "customers" WHERE "customers"."username" = $1 LIMIT $2[0m  [["username", "bobbyboy"], ["LIMIT", 1]]
+  [1m[36mCustomer Create (0.4ms)[0m  [1m[32mINSERT INTO "customers" ("username", "password", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["username", "bobbyboy"], ["password", "safepassword"], ["created_at", "2021-10-07 21:32:47.947081"], ["updated_at", "2021-10-07 21:32:47.947081"]]
+  [1m[36mTRANSACTION (0.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCustomer Load (0.2ms)[0m  [1m[34mSELECT "customers".* FROM "customers" WHERE "customers"."id" = $1 LIMIT $2[0m  [["id", 27], ["LIMIT", 1]]
+  [1m[36mPenguin Create (0.7ms)[0m  [1m[32mINSERT INTO "penguins" ("name", "origin", "price", "bio", "image_url", "shelter", "customer_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["name", "African Penguin"], ["origin", "South Africa"], ["price", 2000], ["bio", "A VERY large boy"], ["image_url", "http://cincinnatizoo.org/system/assets/uploads/2020/08/charlie.jpg"], ["shelter", "Tim Tim's Animals"], ["customer_id", 27], ["created_at", "2021-10-07 21:32:47.983531"], ["updated_at", "2021-10-07 21:32:47.983531"]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+Started GET "/customers" for 127.0.0.1 at 2021-10-07 14:32:49 -0700
+Processing by CustomersController#index as HTML
+  [1m[36mCustomer Load (0.3ms)[0m  [1m[34mSELECT "customers".* FROM "customers"[0m
+  ↳ app/controllers/customers_controller.rb:4:in `index'
+No serializer found for resource: #<Customer id: 27, username: "bobbyboy", password: [FILTERED], created_at: "2021-10-07 21:32:47.947081000 +0000", updated_at: "2021-10-07 21:32:47.947081000 +0000">
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with Customer::ActiveRecord_Relation (0.15ms)
+Completed 200 OK in 13ms (Views: 7.2ms | ActiveRecord: 5.4ms | Allocations: 3327)
+
+
+Started GET "/penguins" for 127.0.0.1 at 2021-10-07 14:32:56 -0700
+Processing by PenguinsController#index as HTML
+  [1m[36mPenguin Load (0.2ms)[0m  [1m[34mSELECT "penguins".* FROM "penguins"[0m
+  ↳ app/controllers/penguins_controller.rb:6:in `index'
+[active_model_serializers]   [1m[36mCustomer Load (0.4ms)[0m  [1m[34mSELECT "customers".* FROM "customers" WHERE "customers"."id" = $1 LIMIT $2[0m  [["id", 27], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/penguins_controller.rb:6:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (6.7ms)
+Completed 200 OK in 27ms (Views: 26.2ms | ActiveRecord: 0.7ms | Allocations: 9330)
+
+
+Started GET "/penguins" for 127.0.0.1 at 2021-10-07 14:34:00 -0700
+Processing by PenguinsController#index as */*
+  [1m[36mPenguin Load (0.3ms)[0m  [1m[34mSELECT "penguins".* FROM "penguins"[0m
+  ↳ app/controllers/penguins_controller.rb:6:in `index'
+[active_model_serializers]   [1m[36mCustomer Load (0.4ms)[0m  [1m[34mSELECT "customers".* FROM "customers" WHERE "customers"."id" = $1 LIMIT $2[0m  [["id", 27], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/penguins_controller.rb:6:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (3.04ms)
+Completed 200 OK in 6ms (Views: 5.2ms | ActiveRecord: 0.7ms | Allocations: 1937)
+
+
+Started GET "/penguins" for 127.0.0.1 at 2021-10-07 14:34:16 -0700
+Processing by PenguinsController#index as */*
+  [1m[36mPenguin Load (0.3ms)[0m  [1m[34mSELECT "penguins".* FROM "penguins"[0m
+  ↳ app/controllers/penguins_controller.rb:6:in `index'
+[active_model_serializers]   [1m[36mCustomer Load (0.4ms)[0m  [1m[34mSELECT "customers".* FROM "customers" WHERE "customers"."id" = $1 LIMIT $2[0m  [["id", 27], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/penguins_controller.rb:6:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (4.16ms)
+Completed 200 OK in 8ms (Views: 6.7ms | ActiveRecord: 0.7ms | Allocations: 1938)
+
+
+Started GET "/penguins" for 127.0.0.1 at 2021-10-07 14:35:28 -0700
+Processing by PenguinsController#index as HTML
+  [1m[36mPenguin Load (0.2ms)[0m  [1m[34mSELECT "penguins".* FROM "penguins"[0m
+  ↳ app/controllers/penguins_controller.rb:6:in `index'
+[active_model_serializers]   [1m[36mCustomer Load (0.3ms)[0m  [1m[34mSELECT "customers".* FROM "customers" WHERE "customers"."id" = $1 LIMIT $2[0m  [["id", 27], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/penguins_controller.rb:6:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (2.8ms)
+Completed 200 OK in 5ms (Views: 4.4ms | ActiveRecord: 0.5ms | Allocations: 1931)
+
+
+Started GET "/penguins" for 127.0.0.1 at 2021-10-07 14:35:29 -0700
+Processing by PenguinsController#index as HTML
+  [1m[36mPenguin Load (0.2ms)[0m  [1m[34mSELECT "penguins".* FROM "penguins"[0m
+  ↳ app/controllers/penguins_controller.rb:6:in `index'
+[active_model_serializers]   [1m[36mCustomer Load (0.3ms)[0m  [1m[34mSELECT "customers".* FROM "customers" WHERE "customers"."id" = $1 LIMIT $2[0m  [["id", 27], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/penguins_controller.rb:6:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (2.38ms)
+Completed 200 OK in 5ms (Views: 4.2ms | ActiveRecord: 0.5ms | Allocations: 1925)
+
+
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mCustomer Load (0.7ms)[0m  [1m[34mSELECT "customers".* FROM "customers"[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCustomer Destroy (3.6ms)[0m  [1m[31mDELETE FROM "customers" WHERE "customers"."id" = $1[0m  [["id", 27]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.6ms)[0m  [1m[35mALTER TABLE "schema_migrations" DISABLE TRIGGER ALL;ALTER TABLE "ar_internal_metadata" DISABLE TRIGGER ALL;ALTER TABLE "customers" DISABLE TRIGGER ALL;ALTER TABLE "penguins" DISABLE TRIGGER ALL[0m
+  [1m[36mTRANSACTION (0.9ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (7.1ms)[0m  [1m[35mTRUNCATE TABLE "customers", "penguins"[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.3ms)[0m  [1m[35mALTER TABLE "schema_migrations" ENABLE TRIGGER ALL;ALTER TABLE "ar_internal_metadata" ENABLE TRIGGER ALL;ALTER TABLE "customers" ENABLE TRIGGER ALL;ALTER TABLE "penguins" ENABLE TRIGGER ALL[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mCustomer Load (0.7ms)[0m  [1m[34mSELECT "customers".* FROM "customers"[0m
+  [1m[36mPenguin Load (0.7ms)[0m  [1m[34mSELECT "penguins".* FROM "penguins"[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCustomer Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM "customers" WHERE "customers"."username" = $1 LIMIT $2[0m  [["username", "bobbyboy"], ["LIMIT", 1]]
+  [1m[36mCustomer Create (0.6ms)[0m  [1m[32mINSERT INTO "customers" ("username", "password", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["username", "bobbyboy"], ["password", "safepassword"], ["created_at", "2021-10-07 21:35:52.942663"], ["updated_at", "2021-10-07 21:35:52.942663"]]
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCustomer Load (0.2ms)[0m  [1m[34mSELECT "customers".* FROM "customers" WHERE "customers"."id" = $1 LIMIT $2[0m  [["id", 28], ["LIMIT", 1]]
+  [1m[36mPenguin Create (1.0ms)[0m  [1m[32mINSERT INTO "penguins" ("name", "origin", "price", "bio", "image_url", "shelter", "customer_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["name", "African Penguin"], ["origin", "South Africa"], ["price", 2000], ["bio", "A VERY large boy"], ["image_url", "http://cincinnatizoo.org/system/assets/uploads/2020/08/charlie.jpg"], ["shelter", "Tim Tim's Animals"], ["customer_id", 28], ["created_at", "2021-10-07 21:35:52.966304"], ["updated_at", "2021-10-07 21:35:52.966304"]]
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCustomer Load (0.2ms)[0m  [1m[34mSELECT "customers".* FROM "customers" WHERE "customers"."id" = $1 LIMIT $2[0m  [["id", 28], ["LIMIT", 1]]
+  [1m[36mPenguin Create (0.3ms)[0m  [1m[32mINSERT INTO "penguins" ("name", "origin", "price", "bio", "image_url", "shelter", "customer_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["name", "King Penguin"], ["origin", "Antarctica"], ["price", 7000], ["bio", "Has the largest breeding cycle of any bird (16 months)"], ["image_url", "https://www.antarctica.gov.au/site/assets/files/45567/rs31765_kings_in_waves_gg_feb_2016_kk.1600x0.jpg"], ["shelter", "Uncle Jay's Wildlife Rescue"], ["customer_id", 28], ["created_at", "2021-10-07 21:35:52.973083"], ["updated_at", "2021-10-07 21:35:52.973083"]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCustomer Load (0.2ms)[0m  [1m[34mSELECT "customers".* FROM "customers" WHERE "customers"."id" = $1 LIMIT $2[0m  [["id", 28], ["LIMIT", 1]]
+  [1m[36mPenguin Create (0.4ms)[0m  [1m[32mINSERT INTO "penguins" ("name", "origin", "price", "bio", "image_url", "shelter", "customer_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["name", "Macaroni Penguin"], ["origin", "Antarctic Peninsula"], ["price", 3000], ["bio", "Need bio"], ["image_url", "https://s3-eu-west-1.amazonaws.com/folly-farm.co.uk/uploads/2018/05/macaroni-penguin-3.jpg"], ["shelter", "Tim Tim's Animals"], ["customer_id", 28], ["created_at", "2021-10-07 21:35:52.978496"], ["updated_at", "2021-10-07 21:35:52.978496"]]
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCustomer Load (0.2ms)[0m  [1m[34mSELECT "customers".* FROM "customers" WHERE "customers"."id" = $1 LIMIT $2[0m  [["id", 28], ["LIMIT", 1]]
+  [1m[36mPenguin Create (0.4ms)[0m  [1m[32mINSERT INTO "penguins" ("name", "origin", "price", "bio", "image_url", "shelter", "customer_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["name", "Emperor Penguin"], ["origin", "Antarctica"], ["price", 15000], ["bio", "Need bio"], ["image_url", "https://cdn.download.ams.birds.cornell.edu/api/v1/asset/362635561/900"], ["shelter", "Penguin Rescue"], ["customer_id", 28], ["created_at", "2021-10-07 21:35:52.984592"], ["updated_at", "2021-10-07 21:35:52.984592"]]
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCustomer Load (0.2ms)[0m  [1m[34mSELECT "customers".* FROM "customers" WHERE "customers"."id" = $1 LIMIT $2[0m  [["id", 28], ["LIMIT", 1]]
+  [1m[36mPenguin Create (0.3ms)[0m  [1m[32mINSERT INTO "penguins" ("name", "origin", "price", "bio", "image_url", "shelter", "customer_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["name", "Adélie penguin"], ["origin", "Antarctica"], ["price", 9000], ["bio", "Need bio"], ["image_url", "https://cdn.download.ams.birds.cornell.edu/api/v1/asset/362643271/1800"], ["shelter", "Tim Tim's Animals"], ["customer_id", 28], ["created_at", "2021-10-07 21:35:52.989920"], ["updated_at", "2021-10-07 21:35:52.989920"]]
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCustomer Load (0.2ms)[0m  [1m[34mSELECT "customers".* FROM "customers" WHERE "customers"."id" = $1 LIMIT $2[0m  [["id", 28], ["LIMIT", 1]]
+  [1m[36mPenguin Create (0.3ms)[0m  [1m[32mINSERT INTO "penguins" ("name", "origin", "price", "bio", "image_url", "shelter", "customer_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["name", "Galapagos Penguin"], ["origin", "Galapagos Islands"], ["price", 3200], ["bio", "Need bio"], ["image_url", "https://www.discoveringgalapagos.org.uk/wp-content/uploads/2014/11/Bill-Hale-Galapagos-Penguin-C.Sombrero-23.5.2009-e1423066207503.jpg"], ["shelter", "Uncle Jay's Wildlife Rescue"], ["customer_id", 28], ["created_at", "2021-10-07 21:35:52.995218"], ["updated_at", "2021-10-07 21:35:52.995218"]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+Started GET "/penguins" for 127.0.0.1 at 2021-10-07 14:35:54 -0700
+Processing by PenguinsController#index as HTML
+  [1m[36mPenguin Load (0.5ms)[0m  [1m[34mSELECT "penguins".* FROM "penguins"[0m
+  ↳ app/controllers/penguins_controller.rb:6:in `index'
+[active_model_serializers]   [1m[36mCustomer Load (0.5ms)[0m  [1m[34mSELECT "customers".* FROM "customers" WHERE "customers"."id" = $1 LIMIT $2[0m  [["id", 28], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/penguins_controller.rb:6:in `index'
+[active_model_serializers]   [1m[36mCACHE Customer Load (0.0ms)[0m  [1m[34mSELECT "customers".* FROM "customers" WHERE "customers"."id" = $1 LIMIT $2[0m  [["id", 28], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/penguins_controller.rb:6:in `index'
+[active_model_serializers]   [1m[36mCACHE Customer Load (0.0ms)[0m  [1m[34mSELECT "customers".* FROM "customers" WHERE "customers"."id" = $1 LIMIT $2[0m  [["id", 28], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/penguins_controller.rb:6:in `index'
+[active_model_serializers]   [1m[36mCACHE Customer Load (0.0ms)[0m  [1m[34mSELECT "customers".* FROM "customers" WHERE "customers"."id" = $1 LIMIT $2[0m  [["id", 28], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/penguins_controller.rb:6:in `index'
+[active_model_serializers]   [1m[36mCACHE Customer Load (0.0ms)[0m  [1m[34mSELECT "customers".* FROM "customers" WHERE "customers"."id" = $1 LIMIT $2[0m  [["id", 28], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/penguins_controller.rb:6:in `index'
+[active_model_serializers]   [1m[36mCACHE Customer Load (0.0ms)[0m  [1m[34mSELECT "customers".* FROM "customers" WHERE "customers"."id" = $1 LIMIT $2[0m  [["id", 28], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/penguins_controller.rb:6:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (14.75ms)
+Completed 200 OK in 18ms (Views: 17.1ms | ActiveRecord: 1.0ms | Allocations: 7266)
+
+
+Started GET "/penguins" for 127.0.0.1 at 2021-10-07 14:36:37 -0700
+Processing by PenguinsController#index as */*
+  [1m[36mPenguin Load (0.5ms)[0m  [1m[34mSELECT "penguins".* FROM "penguins"[0m
+  ↳ app/controllers/penguins_controller.rb:6:in `index'
+[active_model_serializers]   [1m[36mCustomer Load (0.4ms)[0m  [1m[34mSELECT "customers".* FROM "customers" WHERE "customers"."id" = $1 LIMIT $2[0m  [["id", 28], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/penguins_controller.rb:6:in `index'
+[active_model_serializers]   [1m[36mCACHE Customer Load (0.0ms)[0m  [1m[34mSELECT "customers".* FROM "customers" WHERE "customers"."id" = $1 LIMIT $2[0m  [["id", 28], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/penguins_controller.rb:6:in `index'
+[active_model_serializers]   [1m[36mCACHE Customer Load (0.0ms)[0m  [1m[34mSELECT "customers".* FROM "customers" WHERE "customers"."id" = $1 LIMIT $2[0m  [["id", 28], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/penguins_controller.rb:6:in `index'
+[active_model_serializers]   [1m[36mCACHE Customer Load (0.0ms)[0m  [1m[34mSELECT "customers".* FROM "customers" WHERE "customers"."id" = $1 LIMIT $2[0m  [["id", 28], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/penguins_controller.rb:6:in `index'
+[active_model_serializers]   [1m[36mCACHE Customer Load (0.1ms)[0m  [1m[34mSELECT "customers".* FROM "customers" WHERE "customers"."id" = $1 LIMIT $2[0m  [["id", 28], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/penguins_controller.rb:6:in `index'
+[active_model_serializers]   [1m[36mCACHE Customer Load (0.0ms)[0m  [1m[34mSELECT "customers".* FROM "customers" WHERE "customers"."id" = $1 LIMIT $2[0m  [["id", 28], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/penguins_controller.rb:6:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (18.08ms)
+Completed 200 OK in 23ms (Views: 21.2ms | ActiveRecord: 1.0ms | Allocations: 7277)
+
+
+Started GET "/penguins" for 127.0.0.1 at 2021-10-07 14:36:42 -0700
+Processing by PenguinsController#index as */*
+  [1m[36mPenguin Load (0.3ms)[0m  [1m[34mSELECT "penguins".* FROM "penguins"[0m
+  ↳ app/controllers/penguins_controller.rb:6:in `index'
+[active_model_serializers]   [1m[36mCustomer Load (0.4ms)[0m  [1m[34mSELECT "customers".* FROM "customers" WHERE "customers"."id" = $1 LIMIT $2[0m  [["id", 28], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/penguins_controller.rb:6:in `index'
+[active_model_serializers]   [1m[36mCACHE Customer Load (0.0ms)[0m  [1m[34mSELECT "customers".* FROM "customers" WHERE "customers"."id" = $1 LIMIT $2[0m  [["id", 28], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/penguins_controller.rb:6:in `index'
+[active_model_serializers]   [1m[36mCACHE Customer Load (0.0ms)[0m  [1m[34mSELECT "customers".* FROM "customers" WHERE "customers"."id" = $1 LIMIT $2[0m  [["id", 28], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/penguins_controller.rb:6:in `index'
+[active_model_serializers]   [1m[36mCACHE Customer Load (0.0ms)[0m  [1m[34mSELECT "customers".* FROM "customers" WHERE "customers"."id" = $1 LIMIT $2[0m  [["id", 28], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/penguins_controller.rb:6:in `index'
+[active_model_serializers]   [1m[36mCACHE Customer Load (0.0ms)[0m  [1m[34mSELECT "customers".* FROM "customers" WHERE "customers"."id" = $1 LIMIT $2[0m  [["id", 28], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/penguins_controller.rb:6:in `index'
+[active_model_serializers]   [1m[36mCACHE Customer Load (0.0ms)[0m  [1m[34mSELECT "customers".* FROM "customers" WHERE "customers"."id" = $1 LIMIT $2[0m  [["id", 28], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/penguins_controller.rb:6:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (16.92ms)
+Completed 200 OK in 21ms (Views: 19.9ms | ActiveRecord: 0.8ms | Allocations: 7275)
+
+
+Started GET "/penguins" for 127.0.0.1 at 2021-10-07 14:36:44 -0700
+Processing by PenguinsController#index as */*
+  [1m[36mPenguin Load (0.3ms)[0m  [1m[34mSELECT "penguins".* FROM "penguins"[0m
+  ↳ app/controllers/penguins_controller.rb:6:in `index'
+[active_model_serializers]   [1m[36mCustomer Load (0.3ms)[0m  [1m[34mSELECT "customers".* FROM "customers" WHERE "customers"."id" = $1 LIMIT $2[0m  [["id", 28], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/penguins_controller.rb:6:in `index'
+[active_model_serializers]   [1m[36mCACHE Customer Load (0.0ms)[0m  [1m[34mSELECT "customers".* FROM "customers" WHERE "customers"."id" = $1 LIMIT $2[0m  [["id", 28], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/penguins_controller.rb:6:in `index'
+[active_model_serializers]   [1m[36mCACHE Customer Load (0.0ms)[0m  [1m[34mSELECT "customers".* FROM "customers" WHERE "customers"."id" = $1 LIMIT $2[0m  [["id", 28], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/penguins_controller.rb:6:in `index'
+[active_model_serializers]   [1m[36mCACHE Customer Load (0.0ms)[0m  [1m[34mSELECT "customers".* FROM "customers" WHERE "customers"."id" = $1 LIMIT $2[0m  [["id", 28], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/penguins_controller.rb:6:in `index'
+[active_model_serializers]   [1m[36mCACHE Customer Load (0.0ms)[0m  [1m[34mSELECT "customers".* FROM "customers" WHERE "customers"."id" = $1 LIMIT $2[0m  [["id", 28], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/penguins_controller.rb:6:in `index'
+[active_model_serializers]   [1m[36mCACHE Customer Load (0.0ms)[0m  [1m[34mSELECT "customers".* FROM "customers" WHERE "customers"."id" = $1 LIMIT $2[0m  [["id", 28], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/penguins_controller.rb:6:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (11.99ms)
+Completed 200 OK in 17ms (Views: 15.4ms | ActiveRecord: 0.7ms | Allocations: 7275)
+
+
+Started GET "/penguins" for 127.0.0.1 at 2021-10-07 14:37:04 -0700
+Processing by PenguinsController#index as */*
+  [1m[36mPenguin Load (0.2ms)[0m  [1m[34mSELECT "penguins".* FROM "penguins"[0m
+  ↳ app/controllers/penguins_controller.rb:6:in `index'
+[active_model_serializers]   [1m[36mCustomer Load (0.3ms)[0m  [1m[34mSELECT "customers".* FROM "customers" WHERE "customers"."id" = $1 LIMIT $2[0m  [["id", 28], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/penguins_controller.rb:6:in `index'
+[active_model_serializers]   [1m[36mCACHE Customer Load (0.0ms)[0m  [1m[34mSELECT "customers".* FROM "customers" WHERE "customers"."id" = $1 LIMIT $2[0m  [["id", 28], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/penguins_controller.rb:6:in `index'
+[active_model_serializers]   [1m[36mCACHE Customer Load (0.0ms)[0m  [1m[34mSELECT "customers".* FROM "customers" WHERE "customers"."id" = $1 LIMIT $2[0m  [["id", 28], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/penguins_controller.rb:6:in `index'
+[active_model_serializers]   [1m[36mCACHE Customer Load (0.0ms)[0m  [1m[34mSELECT "customers".* FROM "customers" WHERE "customers"."id" = $1 LIMIT $2[0m  [["id", 28], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/penguins_controller.rb:6:in `index'
+[active_model_serializers]   [1m[36mCACHE Customer Load (0.0ms)[0m  [1m[34mSELECT "customers".* FROM "customers" WHERE "customers"."id" = $1 LIMIT $2[0m  [["id", 28], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/penguins_controller.rb:6:in `index'
+[active_model_serializers]   [1m[36mCACHE Customer Load (0.0ms)[0m  [1m[34mSELECT "customers".* FROM "customers" WHERE "customers"."id" = $1 LIMIT $2[0m  [["id", 28], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/penguins_controller.rb:6:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (18.47ms)
+Completed 200 OK in 22ms (Views: 20.6ms | ActiveRecord: 0.7ms | Allocations: 7275)
+
+
+Started GET "/penguins" for 127.0.0.1 at 2021-10-07 14:37:53 -0700
+Processing by PenguinsController#index as */*
+  [1m[36mPenguin Load (0.4ms)[0m  [1m[34mSELECT "penguins".* FROM "penguins"[0m
+  ↳ app/controllers/penguins_controller.rb:6:in `index'
+[active_model_serializers]   [1m[36mCustomer Load (0.3ms)[0m  [1m[34mSELECT "customers".* FROM "customers" WHERE "customers"."id" = $1 LIMIT $2[0m  [["id", 28], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/penguins_controller.rb:6:in `index'
+[active_model_serializers]   [1m[36mCACHE Customer Load (0.0ms)[0m  [1m[34mSELECT "customers".* FROM "customers" WHERE "customers"."id" = $1 LIMIT $2[0m  [["id", 28], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/penguins_controller.rb:6:in `index'
+[active_model_serializers]   [1m[36mCACHE Customer Load (0.0ms)[0m  [1m[34mSELECT "customers".* FROM "customers" WHERE "customers"."id" = $1 LIMIT $2[0m  [["id", 28], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/penguins_controller.rb:6:in `index'
+[active_model_serializers]   [1m[36mCACHE Customer Load (0.0ms)[0m  [1m[34mSELECT "customers".* FROM "customers" WHERE "customers"."id" = $1 LIMIT $2[0m  [["id", 28], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/penguins_controller.rb:6:in `index'
+[active_model_serializers]   [1m[36mCACHE Customer Load (0.0ms)[0m  [1m[34mSELECT "customers".* FROM "customers" WHERE "customers"."id" = $1 LIMIT $2[0m  [["id", 28], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/penguins_controller.rb:6:in `index'
+[active_model_serializers]   [1m[36mCACHE Customer Load (0.0ms)[0m  [1m[34mSELECT "customers".* FROM "customers" WHERE "customers"."id" = $1 LIMIT $2[0m  [["id", 28], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/penguins_controller.rb:6:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (16.33ms)
+Completed 200 OK in 22ms (Views: 20.5ms | ActiveRecord: 0.8ms | Allocations: 7275)
+
+
+Started GET "/penguins" for 127.0.0.1 at 2021-10-07 14:38:04 -0700
+Processing by PenguinsController#index as */*
+  [1m[36mPenguin Load (0.4ms)[0m  [1m[34mSELECT "penguins".* FROM "penguins"[0m
+  ↳ app/controllers/penguins_controller.rb:6:in `index'
+[active_model_serializers]   [1m[36mCustomer Load (0.2ms)[0m  [1m[34mSELECT "customers".* FROM "customers" WHERE "customers"."id" = $1 LIMIT $2[0m  [["id", 28], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/penguins_controller.rb:6:in `index'
+[active_model_serializers]   [1m[36mCACHE Customer Load (0.0ms)[0m  [1m[34mSELECT "customers".* FROM "customers" WHERE "customers"."id" = $1 LIMIT $2[0m  [["id", 28], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/penguins_controller.rb:6:in `index'
+[active_model_serializers]   [1m[36mCACHE Customer Load (0.0ms)[0m  [1m[34mSELECT "customers".* FROM "customers" WHERE "customers"."id" = $1 LIMIT $2[0m  [["id", 28], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/penguins_controller.rb:6:in `index'
+[active_model_serializers]   [1m[36mCACHE Customer Load (0.0ms)[0m  [1m[34mSELECT "customers".* FROM "customers" WHERE "customers"."id" = $1 LIMIT $2[0m  [["id", 28], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/penguins_controller.rb:6:in `index'
+[active_model_serializers]   [1m[36mCACHE Customer Load (0.0ms)[0m  [1m[34mSELECT "customers".* FROM "customers" WHERE "customers"."id" = $1 LIMIT $2[0m  [["id", 28], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/penguins_controller.rb:6:in `index'
+[active_model_serializers]   [1m[36mCACHE Customer Load (0.0ms)[0m  [1m[34mSELECT "customers".* FROM "customers" WHERE "customers"."id" = $1 LIMIT $2[0m  [["id", 28], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/penguins_controller.rb:6:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (11.72ms)
+Completed 200 OK in 15ms (Views: 14.0ms | ActiveRecord: 0.7ms | Allocations: 7276)
+
+
+Started GET "/penguins" for 127.0.0.1 at 2021-10-07 14:38:05 -0700
+Processing by PenguinsController#index as */*
+  [1m[36mPenguin Load (1.2ms)[0m  [1m[34mSELECT "penguins".* FROM "penguins"[0m
+  ↳ app/controllers/penguins_controller.rb:6:in `index'
+[active_model_serializers]   [1m[36mCustomer Load (0.2ms)[0m  [1m[34mSELECT "customers".* FROM "customers" WHERE "customers"."id" = $1 LIMIT $2[0m  [["id", 28], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/penguins_controller.rb:6:in `index'
+[active_model_serializers]   [1m[36mCACHE Customer Load (0.0ms)[0m  [1m[34mSELECT "customers".* FROM "customers" WHERE "customers"."id" = $1 LIMIT $2[0m  [["id", 28], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/penguins_controller.rb:6:in `index'
+[active_model_serializers]   [1m[36mCACHE Customer Load (0.0ms)[0m  [1m[34mSELECT "customers".* FROM "customers" WHERE "customers"."id" = $1 LIMIT $2[0m  [["id", 28], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/penguins_controller.rb:6:in `index'
+[active_model_serializers]   [1m[36mCACHE Customer Load (0.0ms)[0m  [1m[34mSELECT "customers".* FROM "customers" WHERE "customers"."id" = $1 LIMIT $2[0m  [["id", 28], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/penguins_controller.rb:6:in `index'
+[active_model_serializers]   [1m[36mCACHE Customer Load (0.0ms)[0m  [1m[34mSELECT "customers".* FROM "customers" WHERE "customers"."id" = $1 LIMIT $2[0m  [["id", 28], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/penguins_controller.rb:6:in `index'
+[active_model_serializers]   [1m[36mCACHE Customer Load (0.0ms)[0m  [1m[34mSELECT "customers".* FROM "customers" WHERE "customers"."id" = $1 LIMIT $2[0m  [["id", 28], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/penguins_controller.rb:6:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (18.21ms)
+Completed 200 OK in 24ms (Views: 21.7ms | ActiveRecord: 1.6ms | Allocations: 7275)
+
+
+Started GET "/penguins" for 127.0.0.1 at 2021-10-07 14:38:07 -0700
+Processing by PenguinsController#index as */*
+  [1m[36mPenguin Load (0.4ms)[0m  [1m[34mSELECT "penguins".* FROM "penguins"[0m
+  ↳ app/controllers/penguins_controller.rb:6:in `index'
+[active_model_serializers]   [1m[36mCustomer Load (0.2ms)[0m  [1m[34mSELECT "customers".* FROM "customers" WHERE "customers"."id" = $1 LIMIT $2[0m  [["id", 28], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/penguins_controller.rb:6:in `index'
+[active_model_serializers]   [1m[36mCACHE Customer Load (0.0ms)[0m  [1m[34mSELECT "customers".* FROM "customers" WHERE "customers"."id" = $1 LIMIT $2[0m  [["id", 28], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/penguins_controller.rb:6:in `index'
+[active_model_serializers]   [1m[36mCACHE Customer Load (0.0ms)[0m  [1m[34mSELECT "customers".* FROM "customers" WHERE "customers"."id" = $1 LIMIT $2[0m  [["id", 28], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/penguins_controller.rb:6:in `index'
+[active_model_serializers]   [1m[36mCACHE Customer Load (0.0ms)[0m  [1m[34mSELECT "customers".* FROM "customers" WHERE "customers"."id" = $1 LIMIT $2[0m  [["id", 28], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/penguins_controller.rb:6:in `index'
+[active_model_serializers]   [1m[36mCACHE Customer Load (0.0ms)[0m  [1m[34mSELECT "customers".* FROM "customers" WHERE "customers"."id" = $1 LIMIT $2[0m  [["id", 28], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/penguins_controller.rb:6:in `index'
+[active_model_serializers]   [1m[36mCACHE Customer Load (0.0ms)[0m  [1m[34mSELECT "customers".* FROM "customers" WHERE "customers"."id" = $1 LIMIT $2[0m  [["id", 28], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/penguins_controller.rb:6:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (18.53ms)
+Completed 200 OK in 23ms (Views: 22.1ms | ActiveRecord: 0.7ms | Allocations: 7275)
+
+
+Started GET "/penguins" for 127.0.0.1 at 2021-10-07 14:40:00 -0700
+Processing by PenguinsController#index as */*
+  [1m[36mPenguin Load (0.6ms)[0m  [1m[34mSELECT "penguins".* FROM "penguins"[0m
+  ↳ app/controllers/penguins_controller.rb:6:in `index'
+[active_model_serializers]   [1m[36mCustomer Load (0.4ms)[0m  [1m[34mSELECT "customers".* FROM "customers" WHERE "customers"."id" = $1 LIMIT $2[0m  [["id", 28], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/penguins_controller.rb:6:in `index'
+[active_model_serializers]   [1m[36mCACHE Customer Load (0.1ms)[0m  [1m[34mSELECT "customers".* FROM "customers" WHERE "customers"."id" = $1 LIMIT $2[0m  [["id", 28], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/penguins_controller.rb:6:in `index'
+[active_model_serializers]   [1m[36mCACHE Customer Load (0.0ms)[0m  [1m[34mSELECT "customers".* FROM "customers" WHERE "customers"."id" = $1 LIMIT $2[0m  [["id", 28], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/penguins_controller.rb:6:in `index'
+[active_model_serializers]   [1m[36mCACHE Customer Load (0.0ms)[0m  [1m[34mSELECT "customers".* FROM "customers" WHERE "customers"."id" = $1 LIMIT $2[0m  [["id", 28], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/penguins_controller.rb:6:in `index'
+[active_model_serializers]   [1m[36mCACHE Customer Load (0.0ms)[0m  [1m[34mSELECT "customers".* FROM "customers" WHERE "customers"."id" = $1 LIMIT $2[0m  [["id", 28], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/penguins_controller.rb:6:in `index'
+[active_model_serializers]   [1m[36mCACHE Customer Load (0.0ms)[0m  [1m[34mSELECT "customers".* FROM "customers" WHERE "customers"."id" = $1 LIMIT $2[0m  [["id", 28], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/penguins_controller.rb:6:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (17.56ms)
+Completed 200 OK in 22ms (Views: 20.1ms | ActiveRecord: 1.2ms | Allocations: 7275)
+
+
+Started GET "/penguins" for 127.0.0.1 at 2021-10-07 14:40:02 -0700
+Processing by PenguinsController#index as */*
+  [1m[36mPenguin Load (0.4ms)[0m  [1m[34mSELECT "penguins".* FROM "penguins"[0m
+  ↳ app/controllers/penguins_controller.rb:6:in `index'
+[active_model_serializers]   [1m[36mCustomer Load (0.3ms)[0m  [1m[34mSELECT "customers".* FROM "customers" WHERE "customers"."id" = $1 LIMIT $2[0m  [["id", 28], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/penguins_controller.rb:6:in `index'
+[active_model_serializers]   [1m[36mCACHE Customer Load (0.0ms)[0m  [1m[34mSELECT "customers".* FROM "customers" WHERE "customers"."id" = $1 LIMIT $2[0m  [["id", 28], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/penguins_controller.rb:6:in `index'
+[active_model_serializers]   [1m[36mCACHE Customer Load (0.0ms)[0m  [1m[34mSELECT "customers".* FROM "customers" WHERE "customers"."id" = $1 LIMIT $2[0m  [["id", 28], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/penguins_controller.rb:6:in `index'
+[active_model_serializers]   [1m[36mCACHE Customer Load (0.0ms)[0m  [1m[34mSELECT "customers".* FROM "customers" WHERE "customers"."id" = $1 LIMIT $2[0m  [["id", 28], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/penguins_controller.rb:6:in `index'
+[active_model_serializers]   [1m[36mCACHE Customer Load (0.0ms)[0m  [1m[34mSELECT "customers".* FROM "customers" WHERE "customers"."id" = $1 LIMIT $2[0m  [["id", 28], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/penguins_controller.rb:6:in `index'
+[active_model_serializers]   [1m[36mCACHE Customer Load (0.0ms)[0m  [1m[34mSELECT "customers".* FROM "customers" WHERE "customers"."id" = $1 LIMIT $2[0m  [["id", 28], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/penguins_controller.rb:6:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (20.2ms)
+Completed 200 OK in 25ms (Views: 23.8ms | ActiveRecord: 0.8ms | Allocations: 7275)
+
+
+Started GET "/penguins" for 127.0.0.1 at 2021-10-07 14:41:02 -0700
+Processing by PenguinsController#index as */*
+  [1m[36mPenguin Load (0.2ms)[0m  [1m[34mSELECT "penguins".* FROM "penguins"[0m
+  ↳ app/controllers/penguins_controller.rb:6:in `index'
+[active_model_serializers]   [1m[36mCustomer Load (0.1ms)[0m  [1m[34mSELECT "customers".* FROM "customers" WHERE "customers"."id" = $1 LIMIT $2[0m  [["id", 28], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/penguins_controller.rb:6:in `index'
+[active_model_serializers]   [1m[36mCACHE Customer Load (0.0ms)[0m  [1m[34mSELECT "customers".* FROM "customers" WHERE "customers"."id" = $1 LIMIT $2[0m  [["id", 28], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/penguins_controller.rb:6:in `index'
+[active_model_serializers]   [1m[36mCACHE Customer Load (0.0ms)[0m  [1m[34mSELECT "customers".* FROM "customers" WHERE "customers"."id" = $1 LIMIT $2[0m  [["id", 28], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/penguins_controller.rb:6:in `index'
+[active_model_serializers]   [1m[36mCACHE Customer Load (0.0ms)[0m  [1m[34mSELECT "customers".* FROM "customers" WHERE "customers"."id" = $1 LIMIT $2[0m  [["id", 28], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/penguins_controller.rb:6:in `index'
+[active_model_serializers]   [1m[36mCACHE Customer Load (0.0ms)[0m  [1m[34mSELECT "customers".* FROM "customers" WHERE "customers"."id" = $1 LIMIT $2[0m  [["id", 28], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/penguins_controller.rb:6:in `index'
+[active_model_serializers]   [1m[36mCACHE Customer Load (0.0ms)[0m  [1m[34mSELECT "customers".* FROM "customers" WHERE "customers"."id" = $1 LIMIT $2[0m  [["id", 28], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/penguins_controller.rb:6:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (9.6ms)
+Completed 200 OK in 12ms (Views: 11.0ms | ActiveRecord: 0.4ms | Allocations: 7276)
+
+
+Started GET "/penguins" for 127.0.0.1 at 2021-10-07 14:41:05 -0700
+Processing by PenguinsController#index as */*
+  [1m[36mPenguin Load (0.7ms)[0m  [1m[34mSELECT "penguins".* FROM "penguins"[0m
+  ↳ app/controllers/penguins_controller.rb:6:in `index'
+[active_model_serializers]   [1m[36mCustomer Load (0.4ms)[0m  [1m[34mSELECT "customers".* FROM "customers" WHERE "customers"."id" = $1 LIMIT $2[0m  [["id", 28], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/penguins_controller.rb:6:in `index'
+[active_model_serializers]   [1m[36mCACHE Customer Load (0.0ms)[0m  [1m[34mSELECT "customers".* FROM "customers" WHERE "customers"."id" = $1 LIMIT $2[0m  [["id", 28], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/penguins_controller.rb:6:in `index'
+[active_model_serializers]   [1m[36mCACHE Customer Load (0.0ms)[0m  [1m[34mSELECT "customers".* FROM "customers" WHERE "customers"."id" = $1 LIMIT $2[0m  [["id", 28], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/penguins_controller.rb:6:in `index'
+[active_model_serializers]   [1m[36mCACHE Customer Load (0.0ms)[0m  [1m[34mSELECT "customers".* FROM "customers" WHERE "customers"."id" = $1 LIMIT $2[0m  [["id", 28], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/penguins_controller.rb:6:in `index'
+[active_model_serializers]   [1m[36mCACHE Customer Load (0.0ms)[0m  [1m[34mSELECT "customers".* FROM "customers" WHERE "customers"."id" = $1 LIMIT $2[0m  [["id", 28], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/penguins_controller.rb:6:in `index'
+[active_model_serializers]   [1m[36mCACHE Customer Load (0.0ms)[0m  [1m[34mSELECT "customers".* FROM "customers" WHERE "customers"."id" = $1 LIMIT $2[0m  [["id", 28], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/penguins_controller.rb:6:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (16.52ms)
+Completed 200 OK in 21ms (Views: 19.2ms | ActiveRecord: 1.2ms | Allocations: 7275)
+
+
+Started GET "/penguins" for 127.0.0.1 at 2021-10-07 14:41:53 -0700
+Processing by PenguinsController#index as */*
+  [1m[36mPenguin Load (0.5ms)[0m  [1m[34mSELECT "penguins".* FROM "penguins"[0m
+  ↳ app/controllers/penguins_controller.rb:6:in `index'
+[active_model_serializers]   [1m[36mCustomer Load (0.2ms)[0m  [1m[34mSELECT "customers".* FROM "customers" WHERE "customers"."id" = $1 LIMIT $2[0m  [["id", 28], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/penguins_controller.rb:6:in `index'
+[active_model_serializers]   [1m[36mCACHE Customer Load (0.0ms)[0m  [1m[34mSELECT "customers".* FROM "customers" WHERE "customers"."id" = $1 LIMIT $2[0m  [["id", 28], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/penguins_controller.rb:6:in `index'
+[active_model_serializers]   [1m[36mCACHE Customer Load (0.0ms)[0m  [1m[34mSELECT "customers".* FROM "customers" WHERE "customers"."id" = $1 LIMIT $2[0m  [["id", 28], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/penguins_controller.rb:6:in `index'
+[active_model_serializers]   [1m[36mCACHE Customer Load (0.0ms)[0m  [1m[34mSELECT "customers".* FROM "customers" WHERE "customers"."id" = $1 LIMIT $2[0m  [["id", 28], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/penguins_controller.rb:6:in `index'
+[active_model_serializers]   [1m[36mCACHE Customer Load (0.0ms)[0m  [1m[34mSELECT "customers".* FROM "customers" WHERE "customers"."id" = $1 LIMIT $2[0m  [["id", 28], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/penguins_controller.rb:6:in `index'
+[active_model_serializers]   [1m[36mCACHE Customer Load (0.0ms)[0m  [1m[34mSELECT "customers".* FROM "customers" WHERE "customers"."id" = $1 LIMIT $2[0m  [["id", 28], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/penguins_controller.rb:6:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (13.46ms)
+Completed 200 OK in 21ms (Views: 19.9ms | ActiveRecord: 0.8ms | Allocations: 7276)
+
+

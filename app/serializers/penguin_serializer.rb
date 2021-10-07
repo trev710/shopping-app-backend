@@ -1,5 +1,4 @@
 class PenguinSerializer < ActiveModel::Serializer
-  attributes :id, :name, :origin, :age, :bio
+  attributes :id, :name, :origin, :price, :bio, :shelter, :image_url
   has_one :customer
-  has_one :shelter
 end

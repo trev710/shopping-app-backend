@@ -26,24 +26,14 @@ ActiveRecord::Schema.define(version: 2021_10_04_212846) do
     t.string "name"
     t.string "origin"
     t.integer "price"
-    t.string "cateogry"
     t.string "bio"
     t.string "image_url"
+    t.string "shelter"
     t.bigint "customer_id", null: false
-    t.bigint "shelter_id", null: false
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
     t.index ["customer_id"], name: "index_penguins_on_customer_id"
-    t.index ["shelter_id"], name: "index_penguins_on_shelter_id"
-  end
-
-  create_table "shelters", force: :cascade do |t|
-    t.string "name"
-    t.string "location"
-    t.datetime "created_at", precision: 6, null: false
-    t.datetime "updated_at", precision: 6, null: false
   end
 
   add_foreign_key "penguins", "customers"
-  add_foreign_key "penguins", "shelters"
 end

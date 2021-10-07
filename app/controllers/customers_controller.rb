@@ -1,4 +1,9 @@
 class CustomersController < ApplicationController
+  def index
+    customers = Customer.all 
+    render json: customers
+  end
+  
   def show
     if current_user
       render json: current_user
@@ -8,7 +13,7 @@ class CustomersController < ApplicationController
   end
 
   def create
-    customer = Customer.create(user_params)
+    customer = Customer.create(customer_params)
     if customer.valid?
       session[:customer_id] = customer.id
       render json: customer, status: :created
@@ -19,7 +24,7 @@ class CustomersController < ApplicationController
 
   private
 
-  def user_params
+  def customer_params
     params.permit(:username, :password)
   end
 end

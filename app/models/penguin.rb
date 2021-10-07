@@ -1,4 +1,6 @@
 class Penguin < ApplicationRecord
   belongs_to :customer
-  belongs_to :shelter
+
+  # validates :username, presence: true, uniqueness: true
+
 end

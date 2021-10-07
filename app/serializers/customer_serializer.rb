@@ -1,3 +1,3 @@
-class CustomerSerializer < ActiveModel::Serializer
-  attributes :id, :username, :password
-end
+# class CustomerSerializer < ActiveModel::Serializer
+#   attributes :id, :username, :password
+# end

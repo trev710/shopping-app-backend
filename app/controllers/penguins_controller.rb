@@ -1,19 +1,39 @@
 class PenguinsController < ApplicationController
-     rescue_from ActiveRecord::RecordNotFound, with: :render_not_found_response
+    #  rescue_from ActiveRecord::RecordNotFound, with: :render_not_found_response
 
     def index
-        penguin = Penguin.all
-        render json: penguin        #, each_serializer: PenguinSerializer
+        penguins = Penguin.all
+        render json: penguins
+    end
+
+    def create
+        penguin = Customer.create(penguin_params)
+        if penguin.valid?
+            session[:customer_id] = penguin.id
+            render json: penguin, status: :created
+        else
+            render json: { errors: customer.errors.full_messages }, status: :unprocessable_entity
+        end
     end
 
     def show
-        penguin = Penguin.find(params[:id])
-        render json: penguin
+        render json: Penguin.find(params[:id])
     end
 
-    def render_not_found_response
-        render json: { error: "Penguin not found" }, status: :not_found
-    end
+    private
+
+  def penguin_params
+    params.permit(:name, :origin, :price, :bio, :shelter, :image_url)
+  end
+
+    # def show
+    #     penguins = Penguin.find(params[:id])
+    #     render json: penguins
+    # end
+
+    # def render_not_found_response
+    #     render json: { error: "Penguin not found" }, status: :not_found
+    # end
 
     # def render_unprocessable_entity_response(exception)
     #     render json: { errors: exception.record.errors.full_messages }, status: :unprocessable_entity
