@@ -30,10 +30,7 @@ function App() {
   useEffect(() =>  {
     fetch('/penguins')
     .then(res => res.json())
-    // .then(console.log)
     .then(penguin => setPenguins(penguin))
-    // .then(penguin => console.log(penguin))
-    // .then(setPenguins);
     }, [])
 
 

@@ -8,10 +8,11 @@ function Shop({ penguins }) {
             {penguins.map((penguin) => 
                 <PenguinCard
                     key={penguin.id}
-                    // penguin={penguin}
+                    name={penguin.name}
                     image_url={penguin.image_url} 
-                    origin={penguin.origin}
                     price={penguin.price}
+                    origin={penguin.origin}
+                    shelter={penguin.shelter}
                     bio={penguin.bio}
                 />
             )}    
