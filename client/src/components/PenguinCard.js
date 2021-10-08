@@ -4,7 +4,13 @@ import Cart from "./Cart"
 
 function PenguinCard(penguin){
 
+    const [cartItems, setCartItems] = useState([]);
 
+//   const addToCard = () => {
+//     if (group.userGroup) {
+//       return <button onClick={() => joinGroup(group.id)}>Join Group</button>
+//     }
+//   }
     return (
         <div className="card-container">
             <img src={penguin.image_url} alt="penguin-images"></img>
