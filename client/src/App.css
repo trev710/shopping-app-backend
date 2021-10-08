@@ -1,5 +1,8 @@
 .App {
   text-align: center;
+  color:orange;
+  background-image:url('https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwallpapertag.com%2Fwallpaper%2Ffull%2Fe%2Ff%2F5%2F805974-full-size-north-pole-wallpapers-1920x1080-for-computer.jpg&f=1&nofb=1');
+  padding: 90px;
 }
 
 .App-logo {
@@ -31,9 +34,31 @@ img {
 .card-details {
   color: black
 }
+h1 {
+  color: black
+}
+.shop-details {
+
+  color: black
+}
 
 .App-link {
   color: #61dafb;
+}
+.penguins {
+  color: black
+}
+.card-container-items {
+  border: 3px solid;
+  border-color: #282c34;
+  background-color: white;
+  font-family: "Lucida Console", "Courier New", monospace;
+}
+
+.card-container {
+  border: 3px solid;
+  border-color: #282c34;
+  background-color: white;
 }
 
 @keyframes App-logo-spin {

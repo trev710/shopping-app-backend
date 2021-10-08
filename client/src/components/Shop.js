@@ -5,17 +5,12 @@ function Shop({ penguins }) {
 
  return (
         <div className="shop-container">
-            {penguins.map((penguin) => 
-                <PenguinCard
-                    key={penguin.id}
-                    name={penguin.name}
-                    image_url={penguin.image_url} 
-                    price={penguin.price}
-                    origin={penguin.origin}
-                    shelter={penguin.shelter}
-                    bio={penguin.bio}
-                />
-            )}    
+            <div className="penguin-options">
+                <h1>Shop</h1>
+                <div className="penguins">
+                    {penguins.map((penguin) => <PenguinCard key={penguin.id} penguin={penguin} />)}  
+                </div>
+            </div>  
         </div>   
     );
 }
