@@ -1407,3 +1407,371 @@ Processing by PenguinsController#index as */*
 Completed 200 OK in 21ms (Views: 19.9ms | ActiveRecord: 0.8ms | Allocations: 7276)
 
 
+Started GET "/penguins" for 127.0.0.1 at 2021-10-07 15:32:42 -0700
+Processing by PenguinsController#index as HTML
+  [1m[36mPenguin Load (0.6ms)[0m  [1m[34mSELECT "penguins".* FROM "penguins"[0m
+  ↳ app/controllers/penguins_controller.rb:6:in `index'
+[active_model_serializers]   [1m[36mCustomer Load (0.4ms)[0m  [1m[34mSELECT "customers".* FROM "customers" WHERE "customers"."id" = $1 LIMIT $2[0m  [["id", 28], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/penguins_controller.rb:6:in `index'
+[active_model_serializers]   [1m[36mCACHE Customer Load (0.0ms)[0m  [1m[34mSELECT "customers".* FROM "customers" WHERE "customers"."id" = $1 LIMIT $2[0m  [["id", 28], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/penguins_controller.rb:6:in `index'
+[active_model_serializers]   [1m[36mCACHE Customer Load (0.0ms)[0m  [1m[34mSELECT "customers".* FROM "customers" WHERE "customers"."id" = $1 LIMIT $2[0m  [["id", 28], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/penguins_controller.rb:6:in `index'
+[active_model_serializers]   [1m[36mCACHE Customer Load (0.0ms)[0m  [1m[34mSELECT "customers".* FROM "customers" WHERE "customers"."id" = $1 LIMIT $2[0m  [["id", 28], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/penguins_controller.rb:6:in `index'
+[active_model_serializers]   [1m[36mCACHE Customer Load (0.0ms)[0m  [1m[34mSELECT "customers".* FROM "customers" WHERE "customers"."id" = $1 LIMIT $2[0m  [["id", 28], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/penguins_controller.rb:6:in `index'
+[active_model_serializers]   [1m[36mCACHE Customer Load (0.0ms)[0m  [1m[34mSELECT "customers".* FROM "customers" WHERE "customers"."id" = $1 LIMIT $2[0m  [["id", 28], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/penguins_controller.rb:6:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (10.01ms)
+Completed 200 OK in 26ms (Views: 25.4ms | ActiveRecord: 8.5ms | Allocations: 9366)
+
+
+Started GET "/penguins" for 127.0.0.1 at 2021-10-07 15:32:43 -0700
+Processing by PenguinsController#index as HTML
+  [1m[36mPenguin Load (0.2ms)[0m  [1m[34mSELECT "penguins".* FROM "penguins"[0m
+  ↳ app/controllers/penguins_controller.rb:6:in `index'
+[active_model_serializers]   [1m[36mCustomer Load (0.4ms)[0m  [1m[34mSELECT "customers".* FROM "customers" WHERE "customers"."id" = $1 LIMIT $2[0m  [["id", 28], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/penguins_controller.rb:6:in `index'
+[active_model_serializers]   [1m[36mCACHE Customer Load (0.0ms)[0m  [1m[34mSELECT "customers".* FROM "customers" WHERE "customers"."id" = $1 LIMIT $2[0m  [["id", 28], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/penguins_controller.rb:6:in `index'
+[active_model_serializers]   [1m[36mCACHE Customer Load (0.0ms)[0m  [1m[34mSELECT "customers".* FROM "customers" WHERE "customers"."id" = $1 LIMIT $2[0m  [["id", 28], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/penguins_controller.rb:6:in `index'
+[active_model_serializers]   [1m[36mCACHE Customer Load (0.0ms)[0m  [1m[34mSELECT "customers".* FROM "customers" WHERE "customers"."id" = $1 LIMIT $2[0m  [["id", 28], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/penguins_controller.rb:6:in `index'
+[active_model_serializers]   [1m[36mCACHE Customer Load (0.0ms)[0m  [1m[34mSELECT "customers".* FROM "customers" WHERE "customers"."id" = $1 LIMIT $2[0m  [["id", 28], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/penguins_controller.rb:6:in `index'
+[active_model_serializers]   [1m[36mCACHE Customer Load (0.0ms)[0m  [1m[34mSELECT "customers".* FROM "customers" WHERE "customers"."id" = $1 LIMIT $2[0m  [["id", 28], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/penguins_controller.rb:6:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (11.02ms)
+Completed 200 OK in 14ms (Views: 12.6ms | ActiveRecord: 0.7ms | Allocations: 7264)
+
+
+Started GET "/penguins" for 127.0.0.1 at 2021-10-07 15:32:44 -0700
+Processing by PenguinsController#index as HTML
+  [1m[36mPenguin Load (0.2ms)[0m  [1m[34mSELECT "penguins".* FROM "penguins"[0m
+  ↳ app/controllers/penguins_controller.rb:6:in `index'
+[active_model_serializers]   [1m[36mCustomer Load (0.2ms)[0m  [1m[34mSELECT "customers".* FROM "customers" WHERE "customers"."id" = $1 LIMIT $2[0m  [["id", 28], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/penguins_controller.rb:6:in `index'
+[active_model_serializers]   [1m[36mCACHE Customer Load (0.0ms)[0m  [1m[34mSELECT "customers".* FROM "customers" WHERE "customers"."id" = $1 LIMIT $2[0m  [["id", 28], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/penguins_controller.rb:6:in `index'
+[active_model_serializers]   [1m[36mCACHE Customer Load (0.0ms)[0m  [1m[34mSELECT "customers".* FROM "customers" WHERE "customers"."id" = $1 LIMIT $2[0m  [["id", 28], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/penguins_controller.rb:6:in `index'
+[active_model_serializers]   [1m[36mCACHE Customer Load (0.0ms)[0m  [1m[34mSELECT "customers".* FROM "customers" WHERE "customers"."id" = $1 LIMIT $2[0m  [["id", 28], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/penguins_controller.rb:6:in `index'
+[active_model_serializers]   [1m[36mCACHE Customer Load (0.0ms)[0m  [1m[34mSELECT "customers".* FROM "customers" WHERE "customers"."id" = $1 LIMIT $2[0m  [["id", 28], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/penguins_controller.rb:6:in `index'
+[active_model_serializers]   [1m[36mCACHE Customer Load (0.0ms)[0m  [1m[34mSELECT "customers".* FROM "customers" WHERE "customers"."id" = $1 LIMIT $2[0m  [["id", 28], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/penguins_controller.rb:6:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (11.26ms)
+Completed 200 OK in 14ms (Views: 13.1ms | ActiveRecord: 0.6ms | Allocations: 7264)
+
+
+Started GET "/penguins" for 127.0.0.1 at 2021-10-07 16:17:03 -0700
+Processing by PenguinsController#index as HTML
+  [1m[36mPenguin Load (0.6ms)[0m  [1m[34mSELECT "penguins".* FROM "penguins"[0m
+  ↳ app/controllers/penguins_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mCustomer Load (2.5ms)[0m  [1m[34mSELECT "customers".* FROM "customers" WHERE "customers"."id" = $1 LIMIT $2[0m  [["id", 28], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/penguins_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mCACHE Customer Load (0.0ms)[0m  [1m[34mSELECT "customers".* FROM "customers" WHERE "customers"."id" = $1 LIMIT $2[0m  [["id", 28], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/penguins_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mCACHE Customer Load (0.0ms)[0m  [1m[34mSELECT "customers".* FROM "customers" WHERE "customers"."id" = $1 LIMIT $2[0m  [["id", 28], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/penguins_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mCACHE Customer Load (0.0ms)[0m  [1m[34mSELECT "customers".* FROM "customers" WHERE "customers"."id" = $1 LIMIT $2[0m  [["id", 28], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/penguins_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mCACHE Customer Load (0.0ms)[0m  [1m[34mSELECT "customers".* FROM "customers" WHERE "customers"."id" = $1 LIMIT $2[0m  [["id", 28], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/penguins_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mCACHE Customer Load (0.0ms)[0m  [1m[34mSELECT "customers".* FROM "customers" WHERE "customers"."id" = $1 LIMIT $2[0m  [["id", 28], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/penguins_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (19.37ms)
+Completed 200 OK in 46ms (Views: 43.7ms | ActiveRecord: 11.9ms | Allocations: 16979)
+
+
+Started GET "/penguins" for 127.0.0.1 at 2021-10-07 16:17:04 -0700
+Processing by PenguinsController#index as HTML
+  [1m[36mPenguin Load (0.2ms)[0m  [1m[34mSELECT "penguins".* FROM "penguins"[0m
+  ↳ app/controllers/penguins_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mCustomer Load (0.2ms)[0m  [1m[34mSELECT "customers".* FROM "customers" WHERE "customers"."id" = $1 LIMIT $2[0m  [["id", 28], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/penguins_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mCACHE Customer Load (0.0ms)[0m  [1m[34mSELECT "customers".* FROM "customers" WHERE "customers"."id" = $1 LIMIT $2[0m  [["id", 28], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/penguins_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mCACHE Customer Load (0.0ms)[0m  [1m[34mSELECT "customers".* FROM "customers" WHERE "customers"."id" = $1 LIMIT $2[0m  [["id", 28], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/penguins_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mCACHE Customer Load (0.0ms)[0m  [1m[34mSELECT "customers".* FROM "customers" WHERE "customers"."id" = $1 LIMIT $2[0m  [["id", 28], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/penguins_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mCACHE Customer Load (0.0ms)[0m  [1m[34mSELECT "customers".* FROM "customers" WHERE "customers"."id" = $1 LIMIT $2[0m  [["id", 28], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/penguins_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mCACHE Customer Load (0.0ms)[0m  [1m[34mSELECT "customers".* FROM "customers" WHERE "customers"."id" = $1 LIMIT $2[0m  [["id", 28], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/penguins_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (14.42ms)
+Completed 200 OK in 17ms (Views: 16.4ms | ActiveRecord: 0.5ms | Allocations: 7265)
+
+
+Started GET "/babel/parser/lib/index.js" for 127.0.0.1 at 2021-10-07 16:40:45 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/babel/parser/lib/index.js"):
+  
+Started GET "/babel/parser/lib/index.js" for 127.0.0.1 at 2021-10-07 16:40:45 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/babel/parser/lib/index.js"):
+  
+Started GET "/penguins" for 127.0.0.1 at 2021-10-07 16:41:33 -0700
+Processing by PenguinsController#index as */*
+  [1m[36mPenguin Load (0.8ms)[0m  [1m[34mSELECT "penguins".* FROM "penguins"[0m
+  ↳ app/controllers/penguins_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mCustomer Load (0.5ms)[0m  [1m[34mSELECT "customers".* FROM "customers" WHERE "customers"."id" = $1 LIMIT $2[0m  [["id", 28], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/penguins_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mCACHE Customer Load (0.0ms)[0m  [1m[34mSELECT "customers".* FROM "customers" WHERE "customers"."id" = $1 LIMIT $2[0m  [["id", 28], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/penguins_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mCACHE Customer Load (0.1ms)[0m  [1m[34mSELECT "customers".* FROM "customers" WHERE "customers"."id" = $1 LIMIT $2[0m  [["id", 28], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/penguins_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mCACHE Customer Load (0.0ms)[0m  [1m[34mSELECT "customers".* FROM "customers" WHERE "customers"."id" = $1 LIMIT $2[0m  [["id", 28], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/penguins_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mCACHE Customer Load (0.0ms)[0m  [1m[34mSELECT "customers".* FROM "customers" WHERE "customers"."id" = $1 LIMIT $2[0m  [["id", 28], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/penguins_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mCACHE Customer Load (0.0ms)[0m  [1m[34mSELECT "customers".* FROM "customers" WHERE "customers"."id" = $1 LIMIT $2[0m  [["id", 28], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/penguins_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (19.35ms)
+Completed 200 OK in 44ms (Views: 43.0ms | ActiveRecord: 11.6ms | Allocations: 9377)
+
+
+Started GET "/penguins" for 127.0.0.1 at 2021-10-07 16:41:53 -0700
+Processing by PenguinsController#index as */*
+  [1m[36mPenguin Load (0.6ms)[0m  [1m[34mSELECT "penguins".* FROM "penguins"[0m
+  ↳ app/controllers/penguins_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mCustomer Load (1.3ms)[0m  [1m[34mSELECT "customers".* FROM "customers" WHERE "customers"."id" = $1 LIMIT $2[0m  [["id", 28], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/penguins_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mCACHE Customer Load (0.0ms)[0m  [1m[34mSELECT "customers".* FROM "customers" WHERE "customers"."id" = $1 LIMIT $2[0m  [["id", 28], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/penguins_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mCACHE Customer Load (0.0ms)[0m  [1m[34mSELECT "customers".* FROM "customers" WHERE "customers"."id" = $1 LIMIT $2[0m  [["id", 28], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/penguins_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mCACHE Customer Load (0.0ms)[0m  [1m[34mSELECT "customers".* FROM "customers" WHERE "customers"."id" = $1 LIMIT $2[0m  [["id", 28], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/penguins_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mCACHE Customer Load (0.0ms)[0m  [1m[34mSELECT "customers".* FROM "customers" WHERE "customers"."id" = $1 LIMIT $2[0m  [["id", 28], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/penguins_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mCACHE Customer Load (0.0ms)[0m  [1m[34mSELECT "customers".* FROM "customers" WHERE "customers"."id" = $1 LIMIT $2[0m  [["id", 28], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/penguins_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (22.25ms)
+Completed 200 OK in 26ms (Views: 24.0ms | ActiveRecord: 2.0ms | Allocations: 7275)
+
+
+Started GET "/penguins" for 127.0.0.1 at 2021-10-07 16:42:01 -0700
+Processing by PenguinsController#index as */*
+  [1m[36mPenguin Load (0.8ms)[0m  [1m[34mSELECT "penguins".* FROM "penguins"[0m
+  ↳ app/controllers/penguins_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mCustomer Load (0.6ms)[0m  [1m[34mSELECT "customers".* FROM "customers" WHERE "customers"."id" = $1 LIMIT $2[0m  [["id", 28], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/penguins_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mCACHE Customer Load (0.0ms)[0m  [1m[34mSELECT "customers".* FROM "customers" WHERE "customers"."id" = $1 LIMIT $2[0m  [["id", 28], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/penguins_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mCACHE Customer Load (0.0ms)[0m  [1m[34mSELECT "customers".* FROM "customers" WHERE "customers"."id" = $1 LIMIT $2[0m  [["id", 28], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/penguins_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mCACHE Customer Load (0.0ms)[0m  [1m[34mSELECT "customers".* FROM "customers" WHERE "customers"."id" = $1 LIMIT $2[0m  [["id", 28], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/penguins_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mCACHE Customer Load (0.0ms)[0m  [1m[34mSELECT "customers".* FROM "customers" WHERE "customers"."id" = $1 LIMIT $2[0m  [["id", 28], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/penguins_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mCACHE Customer Load (0.0ms)[0m  [1m[34mSELECT "customers".* FROM "customers" WHERE "customers"."id" = $1 LIMIT $2[0m  [["id", 28], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/penguins_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (17.68ms)
+Completed 200 OK in 22ms (Views: 20.0ms | ActiveRecord: 1.6ms | Allocations: 7275)
+
+
+Started GET "/penguins" for 127.0.0.1 at 2021-10-07 16:45:04 -0700
+Processing by PenguinsController#index as */*
+  [1m[36mPenguin Load (0.5ms)[0m  [1m[34mSELECT "penguins".* FROM "penguins"[0m
+  ↳ app/controllers/penguins_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mCustomer Load (0.6ms)[0m  [1m[34mSELECT "customers".* FROM "customers" WHERE "customers"."id" = $1 LIMIT $2[0m  [["id", 28], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/penguins_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mCACHE Customer Load (0.0ms)[0m  [1m[34mSELECT "customers".* FROM "customers" WHERE "customers"."id" = $1 LIMIT $2[0m  [["id", 28], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/penguins_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mCACHE Customer Load (0.0ms)[0m  [1m[34mSELECT "customers".* FROM "customers" WHERE "customers"."id" = $1 LIMIT $2[0m  [["id", 28], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/penguins_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mCACHE Customer Load (0.0ms)[0m  [1m[34mSELECT "customers".* FROM "customers" WHERE "customers"."id" = $1 LIMIT $2[0m  [["id", 28], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/penguins_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mCACHE Customer Load (0.1ms)[0m  [1m[34mSELECT "customers".* FROM "customers" WHERE "customers"."id" = $1 LIMIT $2[0m  [["id", 28], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/penguins_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mCACHE Customer Load (0.0ms)[0m  [1m[34mSELECT "customers".* FROM "customers" WHERE "customers"."id" = $1 LIMIT $2[0m  [["id", 28], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/penguins_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (16.01ms)
+Completed 200 OK in 21ms (Views: 18.7ms | ActiveRecord: 1.2ms | Allocations: 7275)
+
+
+Started GET "/penguins" for 127.0.0.1 at 2021-10-07 16:47:19 -0700
+Processing by PenguinsController#index as */*
+  [1m[36mPenguin Load (0.6ms)[0m  [1m[34mSELECT "penguins".* FROM "penguins"[0m
+  ↳ app/controllers/penguins_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mCustomer Load (0.3ms)[0m  [1m[34mSELECT "customers".* FROM "customers" WHERE "customers"."id" = $1 LIMIT $2[0m  [["id", 28], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/penguins_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mCACHE Customer Load (0.0ms)[0m  [1m[34mSELECT "customers".* FROM "customers" WHERE "customers"."id" = $1 LIMIT $2[0m  [["id", 28], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/penguins_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mCACHE Customer Load (0.0ms)[0m  [1m[34mSELECT "customers".* FROM "customers" WHERE "customers"."id" = $1 LIMIT $2[0m  [["id", 28], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/penguins_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mCACHE Customer Load (0.0ms)[0m  [1m[34mSELECT "customers".* FROM "customers" WHERE "customers"."id" = $1 LIMIT $2[0m  [["id", 28], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/penguins_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mCACHE Customer Load (0.0ms)[0m  [1m[34mSELECT "customers".* FROM "customers" WHERE "customers"."id" = $1 LIMIT $2[0m  [["id", 28], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/penguins_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mCACHE Customer Load (0.0ms)[0m  [1m[34mSELECT "customers".* FROM "customers" WHERE "customers"."id" = $1 LIMIT $2[0m  [["id", 28], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/penguins_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (15.3ms)
+Completed 200 OK in 20ms (Views: 18.3ms | ActiveRecord: 1.1ms | Allocations: 7275)
+
+
+Started GET "/penguins" for 127.0.0.1 at 2021-10-07 16:47:27 -0700
+Processing by PenguinsController#index as */*
+  [1m[36mPenguin Load (0.4ms)[0m  [1m[34mSELECT "penguins".* FROM "penguins"[0m
+  ↳ app/controllers/penguins_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mCustomer Load (0.3ms)[0m  [1m[34mSELECT "customers".* FROM "customers" WHERE "customers"."id" = $1 LIMIT $2[0m  [["id", 28], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/penguins_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mCACHE Customer Load (0.0ms)[0m  [1m[34mSELECT "customers".* FROM "customers" WHERE "customers"."id" = $1 LIMIT $2[0m  [["id", 28], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/penguins_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mCACHE Customer Load (0.0ms)[0m  [1m[34mSELECT "customers".* FROM "customers" WHERE "customers"."id" = $1 LIMIT $2[0m  [["id", 28], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/penguins_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mCACHE Customer Load (0.0ms)[0m  [1m[34mSELECT "customers".* FROM "customers" WHERE "customers"."id" = $1 LIMIT $2[0m  [["id", 28], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/penguins_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mCACHE Customer Load (0.0ms)[0m  [1m[34mSELECT "customers".* FROM "customers" WHERE "customers"."id" = $1 LIMIT $2[0m  [["id", 28], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/penguins_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mCACHE Customer Load (0.0ms)[0m  [1m[34mSELECT "customers".* FROM "customers" WHERE "customers"."id" = $1 LIMIT $2[0m  [["id", 28], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/penguins_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (17.36ms)
+Completed 200 OK in 21ms (Views: 19.5ms | ActiveRecord: 0.9ms | Allocations: 7275)
+
+
+Started GET "/penguins" for 127.0.0.1 at 2021-10-07 16:54:40 -0700
+Processing by PenguinsController#index as */*
+  [1m[36mPenguin Load (0.7ms)[0m  [1m[34mSELECT "penguins".* FROM "penguins"[0m
+  ↳ app/controllers/penguins_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mCustomer Load (0.7ms)[0m  [1m[34mSELECT "customers".* FROM "customers" WHERE "customers"."id" = $1 LIMIT $2[0m  [["id", 28], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/penguins_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mCACHE Customer Load (0.0ms)[0m  [1m[34mSELECT "customers".* FROM "customers" WHERE "customers"."id" = $1 LIMIT $2[0m  [["id", 28], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/penguins_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mCACHE Customer Load (0.1ms)[0m  [1m[34mSELECT "customers".* FROM "customers" WHERE "customers"."id" = $1 LIMIT $2[0m  [["id", 28], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/penguins_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mCACHE Customer Load (0.0ms)[0m  [1m[34mSELECT "customers".* FROM "customers" WHERE "customers"."id" = $1 LIMIT $2[0m  [["id", 28], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/penguins_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mCACHE Customer Load (0.0ms)[0m  [1m[34mSELECT "customers".* FROM "customers" WHERE "customers"."id" = $1 LIMIT $2[0m  [["id", 28], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/penguins_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mCACHE Customer Load (0.0ms)[0m  [1m[34mSELECT "customers".* FROM "customers" WHERE "customers"."id" = $1 LIMIT $2[0m  [["id", 28], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/penguins_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (20.79ms)
+Completed 200 OK in 57ms (Views: 56.5ms | ActiveRecord: 26.8ms | Allocations: 9336)
+
+
+Started GET "/penguins" for 127.0.0.1 at 2021-10-07 16:54:41 -0700
+Processing by PenguinsController#index as */*
+  [1m[36mPenguin Load (0.3ms)[0m  [1m[34mSELECT "penguins".* FROM "penguins"[0m
+  ↳ app/controllers/penguins_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mCustomer Load (0.6ms)[0m  [1m[34mSELECT "customers".* FROM "customers" WHERE "customers"."id" = $1 LIMIT $2[0m  [["id", 28], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/penguins_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mCACHE Customer Load (0.0ms)[0m  [1m[34mSELECT "customers".* FROM "customers" WHERE "customers"."id" = $1 LIMIT $2[0m  [["id", 28], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/penguins_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mCACHE Customer Load (0.0ms)[0m  [1m[34mSELECT "customers".* FROM "customers" WHERE "customers"."id" = $1 LIMIT $2[0m  [["id", 28], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/penguins_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mCACHE Customer Load (0.0ms)[0m  [1m[34mSELECT "customers".* FROM "customers" WHERE "customers"."id" = $1 LIMIT $2[0m  [["id", 28], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/penguins_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mCACHE Customer Load (0.0ms)[0m  [1m[34mSELECT "customers".* FROM "customers" WHERE "customers"."id" = $1 LIMIT $2[0m  [["id", 28], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/penguins_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mCACHE Customer Load (0.0ms)[0m  [1m[34mSELECT "customers".* FROM "customers" WHERE "customers"."id" = $1 LIMIT $2[0m  [["id", 28], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/penguins_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (16.57ms)
+Completed 200 OK in 20ms (Views: 18.6ms | ActiveRecord: 1.0ms | Allocations: 7275)
+
+
+Started GET "/penguins" for 127.0.0.1 at 2021-10-07 16:55:39 -0700
+Processing by PenguinsController#index as */*
+  [1m[36mPenguin Load (0.4ms)[0m  [1m[34mSELECT "penguins".* FROM "penguins"[0m
+  ↳ app/controllers/penguins_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mCustomer Load (0.4ms)[0m  [1m[34mSELECT "customers".* FROM "customers" WHERE "customers"."id" = $1 LIMIT $2[0m  [["id", 28], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/penguins_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mCACHE Customer Load (0.0ms)[0m  [1m[34mSELECT "customers".* FROM "customers" WHERE "customers"."id" = $1 LIMIT $2[0m  [["id", 28], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/penguins_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mCACHE Customer Load (0.0ms)[0m  [1m[34mSELECT "customers".* FROM "customers" WHERE "customers"."id" = $1 LIMIT $2[0m  [["id", 28], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/penguins_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mCACHE Customer Load (0.0ms)[0m  [1m[34mSELECT "customers".* FROM "customers" WHERE "customers"."id" = $1 LIMIT $2[0m  [["id", 28], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/penguins_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mCACHE Customer Load (0.0ms)[0m  [1m[34mSELECT "customers".* FROM "customers" WHERE "customers"."id" = $1 LIMIT $2[0m  [["id", 28], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/penguins_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mCACHE Customer Load (0.0ms)[0m  [1m[34mSELECT "customers".* FROM "customers" WHERE "customers"."id" = $1 LIMIT $2[0m  [["id", 28], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/penguins_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (14.53ms)
+Completed 200 OK in 19ms (Views: 17.9ms | ActiveRecord: 0.9ms | Allocations: 7275)
+
+
+Started GET "/penguins" for 127.0.0.1 at 2021-10-07 16:55:40 -0700
+Processing by PenguinsController#index as */*
+  [1m[36mPenguin Load (0.3ms)[0m  [1m[34mSELECT "penguins".* FROM "penguins"[0m
+  ↳ app/controllers/penguins_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mCustomer Load (0.3ms)[0m  [1m[34mSELECT "customers".* FROM "customers" WHERE "customers"."id" = $1 LIMIT $2[0m  [["id", 28], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/penguins_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mCACHE Customer Load (0.0ms)[0m  [1m[34mSELECT "customers".* FROM "customers" WHERE "customers"."id" = $1 LIMIT $2[0m  [["id", 28], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/penguins_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mCACHE Customer Load (0.0ms)[0m  [1m[34mSELECT "customers".* FROM "customers" WHERE "customers"."id" = $1 LIMIT $2[0m  [["id", 28], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/penguins_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mCACHE Customer Load (0.0ms)[0m  [1m[34mSELECT "customers".* FROM "customers" WHERE "customers"."id" = $1 LIMIT $2[0m  [["id", 28], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/penguins_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mCACHE Customer Load (0.0ms)[0m  [1m[34mSELECT "customers".* FROM "customers" WHERE "customers"."id" = $1 LIMIT $2[0m  [["id", 28], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/penguins_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mCACHE Customer Load (0.0ms)[0m  [1m[34mSELECT "customers".* FROM "customers" WHERE "customers"."id" = $1 LIMIT $2[0m  [["id", 28], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/penguins_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (18.75ms)
+Completed 200 OK in 23ms (Views: 22.2ms | ActiveRecord: 0.7ms | Allocations: 7276)
+
+
+Started GET "/penguins" for 127.0.0.1 at 2021-10-07 16:56:54 -0700
+Processing by PenguinsController#index as */*
+  [1m[36mPenguin Load (0.4ms)[0m  [1m[34mSELECT "penguins".* FROM "penguins"[0m
+  ↳ app/controllers/penguins_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mCustomer Load (0.4ms)[0m  [1m[34mSELECT "customers".* FROM "customers" WHERE "customers"."id" = $1 LIMIT $2[0m  [["id", 28], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/penguins_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mCACHE Customer Load (0.0ms)[0m  [1m[34mSELECT "customers".* FROM "customers" WHERE "customers"."id" = $1 LIMIT $2[0m  [["id", 28], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/penguins_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mCACHE Customer Load (0.0ms)[0m  [1m[34mSELECT "customers".* FROM "customers" WHERE "customers"."id" = $1 LIMIT $2[0m  [["id", 28], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/penguins_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mCACHE Customer Load (0.0ms)[0m  [1m[34mSELECT "customers".* FROM "customers" WHERE "customers"."id" = $1 LIMIT $2[0m  [["id", 28], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/penguins_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mCACHE Customer Load (0.0ms)[0m  [1m[34mSELECT "customers".* FROM "customers" WHERE "customers"."id" = $1 LIMIT $2[0m  [["id", 28], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/penguins_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mCACHE Customer Load (0.0ms)[0m  [1m[34mSELECT "customers".* FROM "customers" WHERE "customers"."id" = $1 LIMIT $2[0m  [["id", 28], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/penguins_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (17.79ms)
+Completed 200 OK in 22ms (Views: 20.3ms | ActiveRecord: 0.9ms | Allocations: 7276)
+
+
+Started GET "/penguins" for 127.0.0.1 at 2021-10-07 17:00:43 -0700
+Processing by PenguinsController#index as */*
+  [1m[36mPenguin Load (0.3ms)[0m  [1m[34mSELECT "penguins".* FROM "penguins"[0m
+  ↳ app/controllers/penguins_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mCustomer Load (0.4ms)[0m  [1m[34mSELECT "customers".* FROM "customers" WHERE "customers"."id" = $1 LIMIT $2[0m  [["id", 28], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/penguins_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mCACHE Customer Load (0.0ms)[0m  [1m[34mSELECT "customers".* FROM "customers" WHERE "customers"."id" = $1 LIMIT $2[0m  [["id", 28], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/penguins_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mCACHE Customer Load (0.0ms)[0m  [1m[34mSELECT "customers".* FROM "customers" WHERE "customers"."id" = $1 LIMIT $2[0m  [["id", 28], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/penguins_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mCACHE Customer Load (0.0ms)[0m  [1m[34mSELECT "customers".* FROM "customers" WHERE "customers"."id" = $1 LIMIT $2[0m  [["id", 28], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/penguins_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mCACHE Customer Load (0.0ms)[0m  [1m[34mSELECT "customers".* FROM "customers" WHERE "customers"."id" = $1 LIMIT $2[0m  [["id", 28], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/penguins_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mCACHE Customer Load (0.0ms)[0m  [1m[34mSELECT "customers".* FROM "customers" WHERE "customers"."id" = $1 LIMIT $2[0m  [["id", 28], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/penguins_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (13.7ms)
+Completed 200 OK in 18ms (Views: 16.5ms | ActiveRecord: 0.8ms | Allocations: 7275)
+
+
+Started GET "/penguins" for 127.0.0.1 at 2021-10-07 17:01:04 -0700
+Processing by PenguinsController#index as */*
+  [1m[36mPenguin Load (0.5ms)[0m  [1m[34mSELECT "penguins".* FROM "penguins"[0m
+  ↳ app/controllers/penguins_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mCustomer Load (0.5ms)[0m  [1m[34mSELECT "customers".* FROM "customers" WHERE "customers"."id" = $1 LIMIT $2[0m  [["id", 28], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/penguins_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mCACHE Customer Load (0.0ms)[0m  [1m[34mSELECT "customers".* FROM "customers" WHERE "customers"."id" = $1 LIMIT $2[0m  [["id", 28], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/penguins_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mCACHE Customer Load (0.0ms)[0m  [1m[34mSELECT "customers".* FROM "customers" WHERE "customers"."id" = $1 LIMIT $2[0m  [["id", 28], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/penguins_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mCACHE Customer Load (0.0ms)[0m  [1m[34mSELECT "customers".* FROM "customers" WHERE "customers"."id" = $1 LIMIT $2[0m  [["id", 28], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/penguins_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mCACHE Customer Load (0.0ms)[0m  [1m[34mSELECT "customers".* FROM "customers" WHERE "customers"."id" = $1 LIMIT $2[0m  [["id", 28], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/penguins_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mCACHE Customer Load (0.0ms)[0m  [1m[34mSELECT "customers".* FROM "customers" WHERE "customers"."id" = $1 LIMIT $2[0m  [["id", 28], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/penguins_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (18.52ms)
+Completed 200 OK in 23ms (Views: 21.4ms | ActiveRecord: 1.1ms | Allocations: 7275)
+
+

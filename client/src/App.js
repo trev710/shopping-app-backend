@@ -9,13 +9,31 @@ import Login from './components/Login';
 function App() {
 
   const [penguins, setPenguins] = useState([]);
-    
+  const [customer, setCustomer] = useState(null);
+
+  // useEffect(() => {
+  //   fetch("/me").then((response) => {
+  //     if (response.ok) {
+  //       response.json().then((customer) => setCustomer(customer));
+  //     }
+  //   });
+  // }, []);
+
+  // if (Customer) {
+  //    return <h2>Welcome, {customer.username}!</h2>;
+  //  } else {
+  //    return <Login onLogin={setCustomer} />;
+  //  }
+  // }
+  
+
   useEffect(() =>  {
     fetch('/penguins')
     .then(res => res.json())
     // .then(console.log)
     .then(penguin => setPenguins(penguin))
-    // .then(penguin => console.log(penguin) )
+    // .then(penguin => console.log(penguin))
+    // .then(setPenguins);
     }, [])
 
 
@@ -48,5 +66,5 @@ function App() {
        </BrowserRouter>
     </div>
   );
- } 
+}
 export default App;

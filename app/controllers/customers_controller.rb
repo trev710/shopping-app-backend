@@ -5,10 +5,11 @@ class CustomersController < ApplicationController
   end
   
   def show
-    if current_user
-      render json: current_user
+    customer = Customer.find_by(id: session[:customer_id])
+    if user
+      render json: customer
     else
-      render json: {}, status: :unauthorized
+      render json: { error: "Not authorized" }, status: :unauthorized
     end
   end
 

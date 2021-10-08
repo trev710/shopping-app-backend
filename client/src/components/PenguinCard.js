@@ -12,7 +12,7 @@ function PenguinCard(penguin){
             <h4>Price:{penguin.price}</h4>
             <h4>Origin:{penguin.origin}</h4>
             <h5>Bio:{penguin.bio}</h5>
-            
+            <br></br>
             <button type="button" className="btn-primary" onClick={console.log("hi")}>Add to Cart</button>
         </div>
     )

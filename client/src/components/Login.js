@@ -4,8 +4,8 @@ import { BrowserRouter } from 'react-router-dom'
 function Login() {
 
     const [inputField , setInputField] = useState({
-        user_name: '',
-        Password: '',
+        username: '',
+        password: '',
         redirectToHome: false
 
     })

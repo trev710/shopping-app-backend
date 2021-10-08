@@ -3,7 +3,7 @@ Rails.application.routes.draw do
   resources :customers, only: [:index, :show, :create, :update, :destroy]
   resources :penguins, only: [:index, :show, :create, :update, :destroy]
 
-  # get "/me", to: "customers#show"
+  get "/me", to: "customers#show"
   # post "/signup", to: "customers#create"
   # post "/login", to: "sessions#create"
   # delete "/logout", to: "sessions#destroy"
