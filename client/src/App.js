@@ -6,6 +6,7 @@ import Home from './components/Home';
 import Checkout from './components/Checkout';
 import Shop from './components/Shop';
 import Login from './components/Login';
+import Cover from './components/Cover';
 function App() {
 
   const [penguins, setPenguins] = useState([]);
@@ -36,6 +37,7 @@ function App() {
 
   return (
     <div className="App">
+      <Cover></Cover>
       <BrowserRouter>
           <nav className="navbar-container">
             <NavLink to="/">Home | </NavLink>
@@ -62,6 +64,7 @@ function App() {
           </Switch>
        </BrowserRouter>
     </div>
+   
   );
 }
 export default App;

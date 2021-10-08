@@ -23,7 +23,7 @@ function Cart(){
 
     return (
         <div className="cart-container">
-            <h2>Cart</h2>
+            <img src="https://text2image.com/user_images/202110/text2image_A3945363_20211008_154305.jpg" alt="cart-image" />
         </div>    
 )}
 

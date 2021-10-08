@@ -1,9 +1,12 @@
 import React, { useState, useEffect } from 'react';
 import PenguinCard from './PenguinCard'
+import "./component.css"
 
 function Shop({ penguins }) {
+{/* <img src=""/> */}
 
  return (
+     
         <div className="shop-container">
             {penguins.map((penguin) => 
                 <PenguinCard
